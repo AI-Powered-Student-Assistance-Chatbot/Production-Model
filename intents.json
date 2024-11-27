@@ -1,0 +1,976 @@
+[
+    {
+        "tag": "greeting",
+        "patterns": [
+            "Hi",
+            "Hello",
+            "Hey",
+            "How are you",
+            "What's up"
+        ],
+        "responses": [
+            "Hi there",
+            "Hello",
+            "Hey",
+            "I'm fine, thank you",
+            "Nothing much"
+        ]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": [
+            "Bye",
+            "See you later",
+            "Goodbye",
+            "Take care"
+        ],
+        "responses": [
+            "Goodbye",
+            "See you later",
+            "Take care"
+        ]
+    },
+    {
+        "tag": "thanks",
+        "patterns": [
+            "Thank you",
+            "Thanks",
+            "Thanks a lot",
+            "I appreciate it"
+        ],
+        "responses": [
+            "You're welcome",
+            "No problem",
+            "Glad I could help"
+        ]
+    },
+    {
+        "tag": "about",
+        "patterns": [
+            "What can you do",
+            "Who are you",
+            "What are you",
+            "What is your purpose"
+        ],
+        "responses": [
+            "I am a chatbot",
+            "My purpose is to assist you",
+            "I can answer questions and provide assistance"
+        ]
+    },
+    {
+        "tag": "help",
+        "patterns": [
+            "Help",
+            "I need help",
+            "Can you help me",
+            "What should I do"
+        ],
+        "responses": [
+            "Sure, what do you need help with?",
+            "I'm here to help. What's the problem?",
+            "How can I assist you?"
+        ]
+    },
+    {
+        "tag": "age",
+        "patterns": [
+            "How old are you",
+            "What's your age"
+        ],
+        "responses": [
+            "I don't have an age. I'm a chatbot.",
+            "I was just born in the digital world.",
+            "Age is just a number for me."
+        ]
+    },
+
+    {
+        "tag": "director",
+        "patterns": [
+            "Who is the director?",
+            "Can you tell me the name of the director?",
+            "Who is the director of the institution?",
+            "Tell me about the director",
+            "Who manages the entire institution?",
+            "What is the name of the director?",
+            "Who is in charge as the director?",
+            "Who is the current director?"
+        ],
+        "responses": [
+            "Dr. A G Thakur is the director.",
+            "The director of the institution is Dr. A G Thakur.",
+            "Dr. A G Thakur leads the institution as the director.",
+            "Dr. A G Thakur serves as the director."
+        ]
+    },
+    
+
+
+
+
+
+    {
+        "tag": "hod",
+        "patterns": [
+            "Who is the head of IT?",
+            "Who is HOD of IT?",
+            "Who is the HOD of IT department?",
+            "Tell me about the IT head",
+            "Who manages the IT department?",
+            "Who is in charge of IT?"
+        ],
+        "responses": [
+            "Dr. M.A. Jawale mam, currently serving as the Head of the Department (HOD) of Information Technology, has now also been entrusted with the additional responsibility of overseeing the Computer Department."
+        ]
+    },
+    {
+        "tag": "highest package",
+        "patterns": [
+            "What is the highest package",
+            "What is the highest package of Sanjivani"
+        ],
+        "responses": [
+            "The highest package of Sanjivani college is 27 LPA. It was offered by Juspay Technologies Pvt Ltd."
+        ]
+    },
+    
+
+    {
+        "tag": "unknown",
+        "patterns": [
+            "xyz123",
+            "random text",
+            "abcdef"
+        ],
+        "responses": [
+            "I'm not sure I understand. Could you please rephrase that?",
+            "I don't have information about that. Please ask something related to college, academics, or credit scores."
+        ]
+    },
+
+    
+        {
+            "tag": "executive_trustee_details",
+            "patterns": [
+                "Who is the Executive Trustee?",
+                "What is the name of the Executive Trustee?",
+                "Can you tell me about the Executive Trustee?",
+                "Who is Shri Nitinrao S. Kolhe?"
+            ],
+            "responses": [
+                "The Executive Trustee is Shri Nitinrao S. Kolhe."
+            ]
+        },
+        {
+            "tag": "managing_trustee_details",
+            "patterns": [
+                "Who is the Managing Trustee?",
+                "What is the name of the Managing Trustee?",
+                "Can you tell me about the Managing Trustee?",
+                "Who is Shri Amit Kolhe?",
+                "who is managing trustee of sanjivani college",
+                "who is Amit kolhe"
+            ],
+            "responses": [
+                "The Managing Trustee is Shri Amit Kolhe."
+            ]
+        },
+        {
+            "tag": "director_details",
+            "patterns": [
+                "Who is the Director of SCOE?",
+                "What is the name of the Director?",
+                "Can you tell me about the Director?",
+                "Who is Dr. A.G. Thakur?"
+            ],
+            "responses": [
+                "The Director of SCOE is Dr. A.G. Thakur."
+            ]
+        },
+        {
+            "tag": "admission",
+            "patterns": [
+                "how can i take admission in sanjivani ",
+                "how to take admission in sanjivani",
+                "how is admission process in sanjivani",
+                "tell me about admission process in sanjivani",
+                "can you tell me about how can i take admission in sanjivani"
+            ],
+            "responses": [
+                "You can get admission in Sanjivani based on your Mht-Cet score and Jee Mains score"
+            ]
+        },
+        {
+            "tag": "executive_trustee_message_summary",
+            "patterns": [
+                "What is the summary of the Executive Trustee's message?",
+                "What is Shri Nitinrao S. Kolhe's message about?",
+                "Can you summarize the Executive Trustee's message?"
+            ],
+            "responses": [
+                "The Executive Trustee, Shri Nitinrao S. Kolhe, emphasizes appreciation for dedication to the institution, celebrating achievements, and fostering a dynamic community."
+            ]
+        },
+        {
+            "tag": "managing_trustee_message_summary",
+            "patterns": [
+                "What is the summary of the Managing Trustee's message?",
+                "What is Shri Amit Kolhe's message about?",
+                "Can you summarize the Managing Trustee's message?"
+            ],
+            "responses": [
+                "The Managing Trustee, Shri Amit Kolhe, highlights resilience, dedication, and participation in various activities to foster educational excellence."
+            ]
+        },
+        {
+            "tag": "director_message_summary",
+            "patterns": [
+                "What is the summary of the Director's message?",
+                "What is Dr. A.G. Thakur's message about?",
+                "Can you summarize the Director's message?"
+            ],
+            "responses": [
+                "The Director, Dr. A.G. Thakur, focuses on the pursuit of knowledge, innovation, and excellence, encouraging everyone to embrace challenges as opportunities."
+            ]
+        },
+        {
+            "tag": "executive_trustee_appreciation",
+            "patterns": [
+                "What does the Executive Trustee appreciate?",
+                "What does Shri Nitinrao S. Kolhe say about appreciation?",
+                "What is the Executive Trustee's view on dedication?"
+            ],
+            "responses": [
+                "The Executive Trustee appreciates the unwavering dedication to the institution's mission and the vibrant community spirit."
+            ]
+        },
+        {
+            "tag": "managing_trustee_resilience",
+            "patterns": [
+                "What does the Managing Trustee say about resilience?",
+                "What is the Managing Trustee's view on dedication?",
+                "What does Shri Amit Kolhe emphasize in his message?"
+            ],
+            "responses": [
+                "The Managing Trustee emphasizes resilience and dedication as key factors in the journey toward educational excellence."
+            ]
+        },
+        {
+            "tag": "director_innovation",
+            "patterns": [
+                "What does the Director say about innovation?",
+                "What is Dr. A.G. Thakur's perspective on knowledge?",
+                "What is the Director's view on excellence?"
+            ],
+            "responses": [
+                "The Director highlights the pursuit of knowledge, innovation, and excellence as core aspects of the institution's mission."
+            ]
+        },
+        {
+            "tag": "executive_trustee_community",
+            "patterns": [
+                "What does the Executive Trustee say about the community?",
+                "How does the Executive Trustee view the college community?",
+                "What is Shri Nitinrao S. Kolhe's perspective on engagement?"
+            ],
+            "responses": [
+                "The Executive Trustee views the college as a vibrant and dynamic community, strengthened by enthusiasm and engagement."
+            ]
+        },
+        {
+            "tag": "managing_trustee_participation",
+            "patterns": [
+                "What does the Managing Trustee say about participation?",
+                "What is Shri Amit Kolhe's view on involvement?",
+                "What is emphasized about activities by the Managing Trustee?"
+            ],
+            "responses": [
+                "The Managing Trustee encourages active participation in activities and programs to shape the institution's vibrant educational landscape."
+            ]
+        },
+        {
+            "tag": "director_challenges",
+            "patterns": [
+                "What does the Director say about challenges?",
+                "How does Dr. A.G. Thakur view challenges?",
+                "What is the Director's message about opportunities?"
+            ],
+            "responses": [
+                "The Director encourages embracing challenges as stepping stones to success and seizing opportunities for growth."
+            ]
+        },
+    
+        {
+            "tag": "head_of_it_department",
+            "patterns": [
+                "Who is the Head of the IT Department?",
+                "Who is the professor and head of IT Engineering at Sanjivani COE?",
+                "Who is Dr. Madhuri A. Jawale?",
+                "Can you tell me about the Head of the IT Department?"
+            ],
+            "responses": [
+                "Dr. Madhuri A. Jawale is the Professor and Head of the Department of IT Engineering at Sanjivani COE, Kopargaon."
+            ]
+        },
+        {
+            "tag": "it_department_progress",
+            "patterns": [
+                "What progress has been made in the IT Department?",
+                "Can you tell me about the development of the IT Department?",
+                "What achievements has the IT Department made recently?",
+                "Has the IT Department received any accreditation?"
+            ],
+            "responses": [
+                "The IT Department is continuously progressing and developing. It has been endorsed by the National Board of Accreditation (NBA), New Delhi, for the third time for the academic years 2022-2025."
+            ]
+        },
+            {
+                "tag": "it_department_overview",
+                "patterns": [
+                    "Can you provide an overview of the IT Department?",
+                    "When was the IT Department established?",
+                    "What facilities does the IT Department have?",
+                    "Tell me about the IT Department at Sanjivani COE."
+                ],
+                "responses": [
+                    "The Department of Information Technology was established in 2001 with an intake of 60 students. It features 8 well-equipped laboratories with the latest hardware and software, 3 classrooms, and one tutorial hall with modern teaching aids and computing facilities. The UG program in the IT Department is accredited by the NBA, New Delhi, for the third time for the academic years 2022-2025."
+                ]
+            },
+            {
+                "tag": "it_department_staff",
+                "patterns": [
+                    "How many staff members are in the IT Department?",
+                    "Tell me about the teaching and supporting staff in the IT Department.",
+                    "Who manages the academic and extracurricular activities in the IT Department?"
+                ],
+                "responses": [
+                    "The IT Department has 16 experienced and well-qualified teaching staff members and 6 supporting staff members who manage regular academic and extracurricular activities, planned at the beginning of each semester."
+                ]
+            },
+            {
+                "tag": "it_department_students",
+                "patterns": [
+                    "What is the student strength in the IT Department?",
+                    "How many students are there in the IT Department?",
+                    "What activities do students in the IT Department participate in?"
+                ],
+                "responses": [
+                    "In the academic year 2022-23, the IT Department had 376 students. Apart from academics, students participate in curricular and co-curricular activities conducted by the department's organization ITERA, as well as other professional bodies like CSI, ISTE, and IEEE."
+                ]
+            },
+            {
+                "tag": "it_department_library",
+                "patterns": [
+                    "Does the IT Department have its own library?",
+                    "What resources are available in the IT Department's library?",
+                    "Tell me about the library facilities in the IT Department."
+                ],
+                "responses": [
+                    "In addition to the central library, the IT Department has its own library with a good collection of reference books, textbooks, and magazines like CSI and IEEE magazines."
+                ]
+            },
+            {
+                "tag": "it_department_value_added_courses",
+                "patterns": [
+                    "What value-added courses does the IT Department offer?",
+                    "Are there any certification programs in the IT Department?",
+                    "Tell me about the SAP Certification Training Programme."
+                ],
+                "responses": [
+                    "The IT Department offers value-added courses like the SAP Certification Training Programme in collaboration with Primus Techsystems Pvt. Ltd. Pune and REDHAT Academy Centre, MBPS Infotech Pune."
+                ]
+            },
+            {
+                "tag": "it_department_capsule_courses",
+                "patterns": [
+                    "What are capsule courses in the IT Department?",
+                    "How does the IT Department improve students' technical skills?",
+                    "Tell me about the capsule courses offered by the IT Department."
+                ],
+                "responses": [
+                    "The IT Department has started capsule courses to improve students' technical skill sets, preparing them for industry demands."
+                ]
+            },
+            {
+                "tag": "it_department_placements",
+                "patterns": [
+                    "What are the placement opportunities in the IT Department?",
+                    "Which companies recruit from the IT Department?",
+                    "Does the IT Department have good placements?"
+                ],
+                "responses": [
+                    "The IT Department has excellent placement opportunities in renowned multinational companies like TCS, Infosys, Persistent, Cognizant, Wipro, and many more."
+                ]
+            },
+            {
+                "tag": "it_department_industry_interaction",
+                "patterns": [
+                    "What industry interaction events are organized by the IT Department?",
+                    "How does the IT Department bridge the gap between industry and institution?",
+                    "Tell me about Sanjivani I-connect."
+                ],
+                "responses": [
+                    "To enhance industry interaction and bridge the gap between industry and institution, the IT Department organizes events like Sanjivani Thought Leader, Sanjivani I-connect, and Sanjivani My Story Board."
+                ]
+            },
+            {
+                "tag": "it_department_skill_development",
+                "patterns": [
+                    "What skill development programs are available in the IT Department?",
+                    "Does the IT Department offer foreign language courses?",
+                    "How does the IT Department prepare students for competitive exams?"
+                ],
+                "responses": [
+                    "The IT Department offers skill development programs like communication and soft skill training, aptitude training, technical skill enhancement, foreign language certification courses, and preparation for competitive exams like GATE, GRE, and CAT."
+                ]
+            },
+            {
+                "tag": "it_department_student_leadership",
+                "patterns": [
+                    "How does the IT Department develop student leadership qualities?",
+                    "What opportunities are available for student leadership in the IT Department?",
+                    "Can students participate in councils or associations in the IT Department?"
+                ],
+                "responses": [
+                    "Students in the IT Department develop leadership qualities through participation in student associations, the student council, professional body activities, and volunteering in events organized at the department or college level."
+                ]
+            },
+            {
+                "tag": "highest_package_selection",
+                "patterns": [
+                    "Who got the highest package in Sanjivani College of Engineering?",
+                    "What is the highest package offered at Sanjivani COE?",
+                    "Tell me about Rahul Kailas Jagdhane's achievement.",
+                    "Who got selected in JUSPAY from Sanjivani COE?",
+                    "What is the package offered to Rahul Kailas Jagdhane?"
+                ],
+                "responses": [
+                    "Rahul Kailas Jagdhane achieved a remarkable milestone by securing the highest package of 27 LPA at Sanjivani College of Engineering. He was selected by JUSPAY. Congratulations to him on this amazing achievement!",
+                    "The highest package at Sanjivani College of Engineering, 27 LPA, was secured by Rahul Kailas Jagdhane, who got selected by JUSPAY. Great work and well deserved!",
+                    "Rahul Kailas Jagdhane set a new benchmark by getting a 27 LPA package, the highest in Sanjivani COE's history, from JUSPAY. Kudos to his hard work and dedication!"
+                ]
+            },
+            {
+                "tag": "IT_Department_CSI_Society",
+                "patterns": [
+                  "What is the role of the CSI society in the IT department?",
+                  "Tell me about the CSI society in the IT department."
+                ],
+                "responses": [
+                  "The CSI society in the IT department of Sanjivani College of Engineering plays a key role in the scientific and educational advancement of computer science and IT. The department has an accredited CSI wing, with over 550 students as members. This society helps students enhance their technical skills while also focusing on personal development."
+                ]
+              },
+              {
+                "tag": "IT_Department_IEEE_ISTE_Society",
+                "patterns": [
+                  "How does the IEEE and ISTE society contribute to student development?",
+                  "What is the role of IEEE and ISTE in the IT department?"
+                ],
+                "responses": [
+                  "The IEEE and ISTE societies provide essential platforms for IT students at Sanjivani College of Engineering. They focus on improving technical expertise and promoting networking opportunities. Through these societies, students engage in various workshops, seminars, and technical events that help bridge the gap between academic knowledge and industry practices."
+                ]
+              },
+              {
+                "tag": "IT_Department_ITERA_Association",
+                "patterns": [
+                  "What is the ITERA association in the IT department?",
+                  "Can you tell me about the ITERA student chapter?"
+                ],
+                "responses": [
+                  "ITERA is a student chapter in the IT department of Sanjivani College of Engineering that organizes technical events aimed at fostering skill development among students. The association provides students with opportunities to participate in workshops, coding contests, and various industry-relevant activities."
+                ]
+              },
+              {
+                "tag": "IT_Department_Mentor_Scheme",
+                "patterns": [
+                  "What is the mentor scheme in the IT department?",
+                  "How does the mentor scheme work in the IT department?"
+                ],
+                "responses": [
+                  "The IT department runs a highly effective mentorship scheme, where batches of 20 students are assigned to a faculty member throughout the year. This mentorship helps students with academic guidance, career advice, and personal development. Under faculty leadership, students are also exposed to a range of extracurricular activities and industry insights."
+                ]
+              },
+              {
+                "tag": "IT_Department_Workshops_and_Activities",
+                "patterns": [
+                  "What kind of workshops are organized by the IT department?",
+                  "Tell me about the workshops and events in the IT department."
+                ],
+                "responses": [
+                  "The IT department organizes various workshops and events to enhance students' technical and soft skills. These workshops cover topics like coding, cybersecurity, and cloud computing. Additionally, the department hosts seminars and technical talks by industry professionals to keep students updated with the latest trends in IT."
+                ]
+              },
+              
+              {
+                "tag": "BTech_Mechatronics_Cutoff",
+                "patterns": [
+                  "What is the cutoff for B.Tech Mechatronics at Sanjivani College of Engineering?",
+                  "Tell me the MHT-CET and JEE Main cutoff for Mechatronics at Sanjivani College.",
+                  "what is cut off of mechatronics department ",
+                  "how much is the cut-off of mechatronics branch ",
+                  "tell me mht-cet cut off of mechatronics department",
+                  "what is cut of of mechatronics"
+                ],
+                "responses": [
+                  "The cutoff for B.Tech Mechatronics at Sanjivani College of Engineering is as follows:\nMHT-CET: 78 for general category, with a range of 72.9 to 62.83 for other categories.\nJEE Main 2023 Rank: Around 33,017."
+                ]
+              },
+              {
+                "tag": "BTech_Electrical_Engineering_Cutoff",
+                "patterns": [
+                  "What is the cutoff for B.Tech Electrical Engineering at Sanjivani College of Engineering?",
+                  "Tell me the MHT-CET and JEE Main cutoff for Electrical Engineering at Sanjivani College.",
+                  "what is cut-off of electrical department",
+                  "tell me cut-off of electrical department",
+                  "what is the mht-cet and jee main cut off of electrical department",
+                  "ho wmuch is the cut-off of electrical department "
+                ],
+                "responses": [
+                  "The cutoff for B.Tech Electrical Engineering at Sanjivani College of Engineering is as follows:\nMHT-CET: 88.50 for general category, with a range of 85.0 to 80.2 for other categories.\nJEE Main 2023 Rank: Around 20,675 for general category."
+                ]
+              },
+              {
+                "tag": "BTech It Engineering Cutoff",
+                "patterns": [
+                  "What is the cutoff for B.Tech It Engineering at Sanjivani College of Engineering?",
+                  "Tell me the MHT-CET and JEE Main cutoff for It Engineering at Sanjivani College.",
+                  "What is the cutoff for B.Tech It Engineering at Sanjivani College of Engineering?",
+                  "Tell me the MHT-CET and JEE Main cutoff for It Engineering at Sanjivani College.",
+                  "what is cut-off of It department",
+                  "tell me cut-off of It department",
+                  "what is the mht-cet and jee main cut off of It department",
+                  "how much is the cut-off of it department "
+                ],
+                "responses": [
+                  "The cutoff for B.Tech IT Engineering at Sanjivani College of Engineering is as follows:\nMHT-CET: 90.83 for general category, with a range of 82.4 to 78.5 for other categories."
+                ]
+              },
+              {
+                "tag": "fees of engineering",
+                "patterns": [
+                  "What is the fees for  Engineering courses at Sanjivani College of Engineering?",
+                  "Tell me the fees structure for  It Engineering at Sanjivani College.",
+                  "can you tell about the fees for engineering courses at  Sanjivani College of Engineering?",
+                  "how much is the fees at sanjivani college",
+                  "what is fees for engineering "
+                ],
+                "responses": [
+                  "The total fees for 4 years engineering course is between 3.94 L -5.25 L"
+                ]
+              },
+              {
+                "tag": "BTech_Civil_Engineering_Cutoff",
+                "patterns": [
+                  "What is the cutoff for B.Tech Civil Engineering at Sanjivani College of Engineering?",
+                  "Tell me the MHT-CET and JEE Main cutoff for Civil Engineering at Sanjivani College.",
+                  "What is the cutoff for B.Tech civil Engineering at Sanjivani College of Engineering?",
+                  "Tell me the MHT-CET and JEE Main cutoff for civil Engineering at Sanjivani College.",
+                  "what is cut-off of civil department",
+                  "tell me cut-off of civil department",
+                  "what is the mht-cet and jee main cut off of civil department",
+                  "ho wmuch is the cut-off of civil department "
+                ],
+                "responses": [
+                  "The cutoff for B.Tech Civil Engineering at Sanjivani College of Engineering is as follows:\nMHT-CET: 85.35 for general category, with a range of 82.4 to 78.5 for other categories.\nJEE Main 2023 Rank: Around 28,190 for general category."
+                ]
+              },
+              {
+                "tag": "BTech_Electronics_Engineering_Cutoff",
+                "patterns": [
+                  "What is the cutoff for B.Tech Electronics Engineering at Sanjivani College of Engineering?",
+                  "Tell me the MHT-CET and JEE Main cutoff for Electronics Engineering at Sanjivani College."
+                ],
+                "responses": [
+                  "The cutoff for B.Tech Electronics Engineering at Sanjivani College of Engineering is as follows:\nMHT-CET: 87.6 for general category, with a range between 85.5 and 80.1 for other categories.\nJEE Main 2023 Rank: Around 22,343."
+                ]
+              },
+              {
+                "tag": "BTech_Artificial_Intelligence_Cutoff",
+                "patterns": [
+                  "What is the cutoff for B.Tech Artificial Intelligence at Sanjivani College of Engineering?",
+                  "Tell me the MHT-CET and JEE Main cutoff for Artificial Intelligence at Sanjivani College."
+                ],
+                "responses": [
+                  "The cutoff for B.Tech Artificial Intelligence at Sanjivani College of Engineering is as follows:\nMHT-CET: 91.1 for general category, with a range between 87.5 to 84.0 for other categories.\nJEE Main 2023 Rank: Around 16,522."
+                ]
+              },{
+                "tag": "IT_Department_Future_Plan",
+                "patterns": [
+                  "What are the future plans for the IT department at Sanjivani College of Engineering?",
+                  "Tell me about the future developments of the IT department in Sanjivani College of Engineering."
+                ],
+                "responses": [
+                  "The future plans for the IT department at Sanjivani College of Engineering include:\n1. Establishing collaboration and exchange programs for faculty with reputed institutes like IITs and NIITs.\n2. Submitting proposals to funding agencies for research and modernization of laboratories (MORDROB).\n3. Signing MOUs with industries for industry-sponsored projects, internships, and training for students.\n4. Motivating faculty to engage in industry interaction to secure sponsored projects and student placements.\n5. Transforming the department into a leading research center specializing in areas like IoT, Cyber Security, Cloud Computing, Artificial Intelligence, Machine Learning, and Web Technology."
+                ]
+              },
+                        
+              {
+              "tag": "nba_accreditation_computer_electrical",
+              "patterns": [
+                  "Which departments at Sanjivani COE received NBA accreditation?",
+                  "Has the Computer Engineering department been accredited by NBA?",
+                  "What is the NBA accreditation status of the Electrical Engineering department?"
+              ],
+              "responses": [
+                  "A big congratulations to the Department of Computer Engineering and the Department of Electrical Engineering at Sanjivani College of Engineering, Kopargaon! Both departments have received Tier-1 accreditation for their B.Tech programs by NBA. This is a significant achievement for the college!"
+              ]
+            },
+            {
+                "tag": "swami_vivekananda_yuva_suraksha_yojana",
+                "patterns": [
+                    "What is the Swami Vivekananda Yuva Suraksha Yojana?",
+                    "Tell me about the Swami Vivekananda Yuva Suraksha Yojana insurance scheme.",
+                    "Can you explain the Swami Vivekananda Yuva Suraksha Yojana?"
+                ],
+                "responses": [
+                    "The Swami Vivekananda Yuva Suraksha Yojana is an insurance scheme aimed at providing financial protection to youth, ensuring their safety and security. Its a great initiative that promotes well-being and confidence among the younger generation."
+                ]
+              },
+              {
+                "tag": "admission_notification_2024_25",
+                "patterns": [
+                    "When is the admission for 2024-25 starting?",
+                    "Tell me about the admission process for B.Tech and M.Tech for 2024-25.",
+                    "Is there an admission notice for direct second-year B.Tech for 2024-25?"
+                ],
+                "responses": [
+                    "The admission notifications for the academic year 2024-25 are now out! This includes openings for First Year B.Tech, Second Year B.Tech (Direct Entry), M.Tech, and MBA programs. If you're interested in applying for direct second-year engineering courses, there’s a special admission notice for that as well. Be sure to check the brochures for more details!"
+                ]
+              },
+              {
+                "tag": "about_sanjivani_college",
+                "patterns": [
+                    "Tell me about Sanjivani College of Engineering.",
+                    "What is the history of Sanjivani College of Engineering?",
+                    "When was Sanjivani College of Engineering established?"
+                ],
+                "responses": [
+                    "Sanjivani College of Engineering, an autonomous institute in Kopargaon, is one of the leading technical institutes in Maharashtra’s un-aided sector. Established in 1983 by the Sanjivani Rural Educational Society under the leadership of Shri. Shankarrao G. Kolhe, the college has always aimed at transforming society and uplifting rural communities through quality education, training, and research."
+                ]
+              },
+              {
+                "tag": "dr_madhuri_jawale_hod",
+                "patterns": [
+                    "Who is the HOD of the IT department?",
+                    "Tell me about Dr. Madhuri A Jawale.",
+                    "What is Dr. Madhuri A Jawale's designation?"
+                ],
+                "responses": [
+                    "Dr. Madhuri A Jawale is the Professor and Head of the IT Department at Sanjivani College of Engineering. She is responsible for overseeing the department's academic activities and plays a key role in guiding students and faculty."
+                ]
+              },
+              {
+                "tag": "mr_aa_barbind_assistant_professor",
+                "patterns": [
+                    "Tell me about Mr. A A Barbind.",
+                    "What is Mr. A A Barbind's designation?",
+                    "Who is Mr. A A Barbind in the IT department?"
+                ],
+                "responses": [
+                    "Mr. A A Barbind is an Assistant Professor in the IT department at Sanjivani College of Engineering. He contributes to the academic development of students and the overall functioning of the department."
+                ]
+              },
+              {
+                "tag": "mr_rn_kankrale_assistant_professor",
+                "patterns": [
+                    "Who is Mr. R N Kankrale?",
+                    "Tell me about Mr. R N Kankrale.",
+                    "What is Mr. R N Kankrale's designation?"
+                ],
+                "responses": [
+                    "Mr. R N Kankrale is an Assistant Professor in the IT department at Sanjivani College of Engineering. He plays an important role in shaping the curriculum and helping students excel in their studies."
+                ]
+              },
+              {
+                "tag": "dr_rr_nikam_assistant_professor",
+                "patterns": [
+                    "Tell me about Dr. R R Nikam.",
+                    "What is Dr. R R Nikam's designation?",
+                    "Who is Dr. R R Nikam in the IT department?"
+                ],
+                "responses": [
+                    "Dr. R R Nikam is an Assistant Professor in the IT department at Sanjivani College of Engineering. He is dedicated to providing quality education and engaging in research activities that benefit both students and the department."
+                ]
+              },
+              {
+                "tag": "dr_rd_chintamni_assistant_professor",
+                "patterns": [
+                    "Who is Dr. R D Chintamni?",
+                    "Tell me about Dr. R D Chintamni.",
+                    "What is Dr. R D Chintamni's designation?"
+                ],
+                "responses": [
+                    "Dr. R D Chintamni is an Assistant Professor in the IT department at Sanjivani College of Engineering. He is committed to delivering high-quality education and mentoring students for their academic and professional growth."
+                ]
+              },
+              {
+                "tag": "dr_ys_deshmukh_assistant_professor",
+                "patterns": [
+                    "Tell me about Dr. Y S Deshmukh.",
+                    "What is Dr. Y S Deshmukh's designation?",
+                    "Who is Dr. Y S Deshmukh in the IT department?"
+                ],
+                "responses": [
+                    "Dr. Y S Deshmukh is an Assistant Professor in the IT department at Sanjivani College of Engineering. He contributes significantly to the academic development of the department and helps students achieve their goals."
+                ]
+              },
+              {
+                "tag": "mrs_kd_patil_assistant_professor",
+                "patterns": [
+                    "Tell me about Mrs. K D Patil.",
+                    "What is Mrs. K D Patil's designation?",
+                    "Who is Mrs. K D Patil in the IT department?"
+                ],
+                "responses": [
+                    "Mrs. K D Patil is an Assistant Professor in the IT department at Sanjivani College of Engineering. She actively participates in shaping the educational experience of students and is known for her dedication to teaching."
+                ]
+              },
+              {
+                "tag": "dr_ns_patankar_assistant_professor",
+                "patterns": [
+                    "Who is Dr. N S Patankar?",
+                    "Tell me about Dr. N S Patankar.",
+                    "What is Dr. N S Patankar's designation?"
+                ],
+                "responses": [
+                    "Dr. N S Patankar is an Assistant Professor in the IT department at Sanjivani College of Engineering. He is known for his academic expertise and efforts in helping students excel in the IT field."
+                ]
+              },
+              {
+                "tag": "dr_cd_bawankar_assistant_professor",
+                "patterns": [
+                    "Tell me about Dr. C D Bawankar.",
+                    "What is Dr. C D Bawankar's designation?",
+                    "Who is Dr. C D Bawankar in the IT department?",
+                    "tell me about Dr.C.D bawankar sir"
+                ],
+                "responses": [
+                    "Dr. C D Bawankar is an Assistant Professor in the IT department at Sanjivani College of Engineering. His contributions to the department and teaching are highly valued by both students and faculty."
+                ]
+              },
+              {
+                "tag": "mr_pr_mutkule_assistant_professor",
+                "patterns": [
+                    "Who is Mr. P.R. Mutkule?",
+                    "Tell me about Mr. P.R. Mutkule.",
+                    "What is Mr. P.R. Mutkule's designation?"
+                ],
+                "responses": [
+                    "Mr. P.R. Mutkule is an Assistant Professor in the IT department at Sanjivani College of Engineering. He plays an important role in enhancing the learning experience for students through effective teaching and guidance."
+                ]
+              },
+              {
+                "tag": "mrs_megha_shriram_kurhe_assistant_professor",
+                "patterns": [
+                    "Who is Mrs. Megha Shriram Kurhe?",
+                    "Tell me about Mrs. Megha Shriram Kurhe.",
+                    "What is Mrs. Megha Shriram Kurhe's designation?"
+                ],
+                "responses": [
+                    "Mrs. Megha Shriram Kurhe is an Assistant Professor in the IT department at Sanjivani College of Engineering. Her dedication to teaching and student success makes her a valuable member of the faculty."
+                ]
+              },
+              {
+                "tag": "mr_shelake_nitin_laxman_assistant_professor",
+                "patterns": [
+                    "Tell me about Mr. Shelake Nitin Laxman.",
+                    "What is Mr. Shelake Nitin Laxman's designation?",
+                    "Who is Mr. Shelake Nitin Laxman in the IT department?"
+                ],
+                "responses": [
+                    "Mr. Shelake Nitin Laxman is an Assistant Professor in the IT department at Sanjivani College of Engineering. He is actively involved in teaching and shaping the academic future of students."
+                ]
+              },
+              {
+                "tag": "mr_smuthuraj_assistant_professor",
+                "patterns": [
+                    "Tell me about Mr. S. Muthuraj.",
+                    "What is Mr. S. Muthuraj's designation?",
+                    "Who is Mr. S. Muthuraj in the IT department?"
+                ],
+                "responses": [
+                    "Mr. S. Muthuraj is an Assistant Professor in the IT department at Sanjivani College of Engineering. His academic contributions are highly appreciated by the students and the department."
+                ]
+              },
+              {
+                "tag": "mr_ub_sangule_assistant_professor",
+                "patterns": [
+                    "Who is Mr. U.B. Sangule?",
+                    "Tell me about Mr. U.B. Sangule.",
+                    "What is Mr. U.B. Sangule's designation?"
+                ],
+                "responses": [
+                    "Mr. U.B. Sangule is an Assistant Professor in the IT department at Sanjivani College of Engineering. He plays an integral role in educating and guiding students in their academic journey."
+                ]
+              },
+              {
+                "tag": "mrs_bb_pawar_assistant_professor",
+                "patterns": [
+                    "Tell me about Mrs. B.B. Pawar.",
+                    "What is Mrs. B.B. Pawar's designation?",
+                    "Who is Mrs. B.B. Pawar in the IT department?"
+                ],
+                "responses": [
+                    "Mrs. B.B. Pawar is an Assistant Professor in the IT department at Sanjivani College of Engineering. Her passion for teaching and mentoring students is an asset to the department."
+                ]
+              },
+              {
+                "tag": "miss_pg_thakre_assistant_professor",
+                "patterns": [
+                    "Who is Miss P.G. Thakre?",
+                    "Tell me about Miss P.G. Thakre.",
+                    "What is Miss P.G. Thakre's designation?"
+                ],
+                "responses": [
+                    "Miss P.G. Thakre is an Assistant Professor in the IT department at Sanjivani College of Engineering. She is committed to helping students succeed academically and grow professionally."
+                ]
+              },{
+                "tag": "Information_Technology_Department_Sanjivani_College_of_Engineering",
+                "patterns": [
+                  "What is the NBA accreditation status of the IT department?",
+                  "What labs are available in the IT department?",
+                  "Does the IT department offer any value-added courses?",
+                  "What are the latest courses offered by the IT department?",
+                  "What emerging areas are being taught in the IT department?",
+                  "What technologies are being taught in the IT department?",
+                  "How can I find more information about research or placements in the IT department?"
+                ],
+                "responses": [
+                  "The Department of Information Technology at Sanjivani College of Engineering is NBA accredited for its undergraduate program until 2025, ensuring high-quality education.",
+                  "The IT department is equipped with eight specialized labs, including Language Lab, Network Lab, Programming Labs, Project Lab, Hardware Lab, and Open Source Lab, providing hands-on experience with advanced technologies.",
+                  "The department collaborates with industry leaders to offer value-added courses such as SAP Certification Training, which equips students with industry-relevant skills to boost employability.",
+                  "The department offers recent courses focused on Cyber Security, Cyber Crime Laws, cryptography, network security, and digital legal frameworks, alongside courses in cloud computing and machine learning.",
+                  "Emerging fields like Cyber Security, Cyber Crime Laws, and machine learning are highlighted in the departments curriculum, providing students with in-demand skills for the digital economy.",
+                  "Students in the IT department are learning cutting-edge technologies, including cloud computing, machine learning, cryptography, and network security, which are critical for todays IT landscape.",
+                  "For more updates on research opportunities and placement details, you can visit the official website of Sanjivani College of Engineering or check out the academic sections related to cryptography and specialized IT fields."
+                ]
+              },
+              
+              {
+              "tag": "Cutoff of IT Department",
+              "patterns": [
+              "What is the cutoff for B.Tech Information Technology at Sanjivani College of Engineering?",
+              "what is cutoff of it department?",
+              "what is cutoff of IT department in Sanjivani College of Engineering?",
+              "Tell me the MHT-CET and JEE Main cutoff for Information Technology at Sanjivani College."
+              ],
+              "responses": [
+              "The cutoff for B.Tech Information Technology at Sanjivani College of Engineering is as follows:\nMHT-CET: 90.83 for general category, with a range between 87.08 to 84.09 for other categories.\nJEE Main 2023 Rank: Around 17,733 for general category."
+              ]
+              },
+              {
+              "tag": "Cutoff of Computer Department",
+              "patterns": [
+              "What is the cutoff for B.Tech Computer Engineering at Sanjivani College of Engineering?",
+              "Tell me the MHT-CET and JEE Main cutoff for Computer Engineering at Sanjivani College."
+              ],
+              "responses": [
+              "The cutoff for B.Tech Computer Engineering at Sanjivani College of Engineering is as follows:\nMHT-CET: 92.54 for general category, with a range between 89.52 and 87.7 for other categories.\nJEE Main 2023 Rank: Around 14,225."
+              ]
+              },
+              {
+                "tag": "faculty of it department",
+                "patterns": [
+                    "Who are the faculty members in the IT department?",
+                    "Can you list the faculty in the IT department?",
+                    "Tell me about the IT department faculty members.",
+                    "who are the teachers at IT department?",
+                    "Who are the professors in the IT department?",
+                    "Who are the lecturers in the IT department?",
+                    "Who are the faculty members in the IT department of Sanjivani College of Engineering?",
+                    "Who are the teachers in the IT department of Sanjivani College of Engineering?"
+                ],
+                "responses": [
+                    "Here are the faculty members in the IT department of Sanjivani College of Engineering:\n\n- Dr. Madhuri A Jawale (Professor & HOD)\n- Mr. A A Barbind (Assistant Professor)\n- Mr. R N Kankrale (Assistant Professor)\n- Dr. R R Nikam (Assistant Professor)\n- Dr. R D Chintamni (Assistant Professor)\n- Dr. Y S Deshmukh (Assistant Professor)\n- Mrs. K D Patil (Assistant Professor)\n- Dr. N S Patankar (Assistant Professor)\n- Dr. C D Bawankar (Assistant Professor)\n- Mr. P.R. Mutkule (Assistant Professor)\n- Mrs. Megha Shriram Kurhe (Assistant Professor)\n- Mr. Shelake Nitin Laxman (Assistant Professor)\n- Mr. S. Muthuraj (Assistant Professor)\n- Mr. U.B. Sangule (Assistant Professor)\n- Mrs. B.B. Pawar (Assistant Professor)\n- Miss P.G. Thakre (Assistant Professor)\n\nEach of these faculty members brings valuable expertise and contributes significantly to the department."
+                ]
+            },
+            {
+                "tag": "IT_Department_Labs",
+                "patterns": [
+                  "What labs are available in the IT department?",
+                  "Tell me about the labs in the IT department.",
+                  "What are the specialized labs in the IT department?",
+                  "Can you list the labs in the IT department?"
+                ],
+                "responses": [
+                  "The IT department at Sanjivani College of Engineering has several specialized labs to provide students with hands-on experience and practical knowledge. The labs include:\n\n1. Language Lab\n2. Network Lab\n3. Programming Labs\n4. Project Lab\n5. Hardware Lab\n6. Open Source Lab\n\nThese labs are equipped with the latest technology and tools to enhance the learning experience of students."
+                ]
+              },
+              {
+                "tag": "IT_Department_Research",
+                "patterns": [
+                  "What research opportunities are available in the IT department?",
+                  "Tell me about the research activities in the IT department.",
+                  "How can students get involved in research in the IT department?",
+                  "Are there any research projects in the IT department?"
+                ],
+                "responses": [
+                  "The IT department at Sanjivani College of Engineering offers various research opportunities for students to explore and engage in cutting-edge projects. Students can get involved in research activities through faculty guidance, project work, and participation in research-oriented events and seminars. The department encourages students to pursue research projects in emerging areas like Cyber Security, Cloud Computing, and Machine Learning."
+                ]
+              },
+              {
+                "tag": "IT_Department_Placements",
+                "patterns": [
+                  "What placement opportunities are available in the IT department?",
+                  "Tell me about the placement record of the IT department.",
+                  "How are the placements in the IT department?",
+                  "Which companies recruit from the IT department?"
+                ],
+                "responses": [
+                  "The IT department at Sanjivani College of Engineering has an excellent placement record, with students securing placements in top companies like TCS, Infosys, Wipro, Cognizant, and many more. The department provides students with the necessary skills and training to excel in their careers and secure lucrative job opportunities."
+                ]
+              },
+                {
+                    "tag": "IT_Department_Events",
+                    "patterns": [
+                    "What events are organized by the IT department?",
+                    "Tell me about the events conducted by the IT department.",
+                    "How does the IT department engage students through events?",
+                    "Are there any upcoming events in the IT department?"
+                    ],
+                    "responses": [
+                    "The IT department at Sanjivani College of Engineering organizes various events to engage students and enhance their learning experience. These events include workshops, seminars, technical talks, coding contests, and industry interactions. Students can participate in these events to gain practical knowledge, network with industry professionals, and stay updated on the latest trends in the IT field."
+                    ]
+                },
+                {
+                    "tag": "IT_Department_Courses",
+                    "patterns": [
+                    "What courses are offered by the IT department?",
+                    "Tell me about the courses available in the IT department.",
+                    "Can you list the courses offered by the IT department?",
+                    "What are the latest courses introduced by the IT department?"
+                    ],
+                    "responses": [
+                    "The IT department at Sanjivani College of Engineering offers a wide range of courses to equip students with the necessary skills and knowledge in the field of Information Technology. Some of the courses offered by the department include:\n\n1. Cyber Security\n2. Cloud Computing\n3. Machine Learning\n4. Cryptography\n5. Network Security\n\nThese courses are designed to prepare students for the challenges of the digital world and provide them with a competitive edge in the IT industry."
+                    ]
+                },
+                {
+                    "tag": "IT_Department_Faculty_Development",
+                    "patterns": [
+                    "How does the IT department support faculty development?",
+                    "Tell me about the faculty development programs in the IT department.",
+                    "What initiatives are taken for faculty development in the IT department?"
+                    ],
+                    "responses": [
+                    "The IT department at Sanjivani College of Engineering is committed to supporting faculty development and enhancing the academic quality of the department. The department conducts faculty development programs, workshops, and training sessions to help faculty members stay updated on the latest trends in IT, teaching methodologies, and research practices. These initiatives ensure that faculty members are well-equipped to provide high-quality education and mentorship to students."
+                    ]
+                },
+                {
+                    "tag": "hostel fees",
+                    "patterns": [
+                    "How much is the hostel fees?",
+                    "Tell me about the hostel fees.",
+                    "what is the hostel fees",
+                    " hostel fees",
+                    " give me hostel fees"
+                    ],
+                    "responses": [
+                    "The fees of hostel for boys and girls is 35000 inr."
+                    ]
+                }
+
+
+        
+             
+]

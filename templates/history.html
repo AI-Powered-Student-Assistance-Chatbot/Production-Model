@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Conversation History</h2>
+
+{% if conversation %}
+    <ul class="history-list">
+        {% for chat in conversation %}
+        <li class="chat-item">
+            <div><strong>User:</strong> {{ chat.user }}</div>
+            <div><strong>Chatbot:</strong> {{ chat.bot }}</div>
+            <div><em>Timestamp: {{ chat.timestamp }}</em></div>
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No conversation history available. Start chatting to create a log!</p>
+{% endif %}
+
+<style>
+    .history-list {
+        list-style: none;
+        padding: 0;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+    .chat-item {
+        background: #f9f9f9;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .chat-item div {
+        margin: 5px 0;
+    }
+    strong {
+        color: #2c3e50;
+    }
+    em {
+        color: #7f8c8d;
+        font-size: 0.9em;
+    }
+</style>
+{% endblock %}

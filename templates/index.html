@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Chat with the Bot</h2>
+
+<!-- Chat Box displaying the entire chat history -->
+<div class="chat-box" id="chatbox" style="height: 450px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; background-color: #fafafa;">
+    <!-- Display messages in their original order -->
+    {% for message in chat_history %}
+    <div class="message user-message">
+        <strong>You:</strong> {{ message.user }}
+    </div>
+    <div class="message bot-message">
+        <strong>Bot:</strong> {{ message.bot }}
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Form for user input -->
+<div class="chat-form" style="margin-top: 20px; display: flex;">
+    <textarea id="chat-input" placeholder="Type your message..." style="flex: 1; padding: 10px; height: 50px; border: 1px solid #ccc; border-radius: 5px; resize: none;"></textarea>
+    <button id="send-btn" style="padding: 10px 20px; margin-left: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Send
+    </button>
+</div>
+<!-- Modals for History and About -->
+<div id="history-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Chat History</h3>
+        <div id="chat-history"></div>
+    </div>
+</div>
+
+<div id="about-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>About the Bot</h3>
+        <p>This bot uses Flask and a Machine Learning model to interact with you!</p>
+    </div>
+</div>
+
+<script>
+    const chatbox = document.querySelector("#chatbox");
+    const chatInput = document.querySelector("#chat-input");
+    const sendChatBtn = document.querySelector("#send-btn");
+    const historyModal = document.getElementById("history-modal");
+    const aboutModal = document.getElementById("about-modal");
+    const closeBtns = document.querySelectorAll(".close-modal");
+
+    // Function to create a chat message (bot or user)
+    const createChatDiv = (message, className, isBot = false) => {
+        const messageDiv = document.createElement("div");
+        messageDiv.classList.add("message", className);
+
+        const timestamp = new Date().toLocaleString("en-US", {
+            year: "numeric",
+            month: "numeric",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: true,
+        });
+
+        messageDiv.innerHTML = `<strong>${isBot ? "Bot:" : "You:"}</strong> ${message} <span style="font-size: 0.8em; color: gray;">${timestamp}</span>`;
+        return messageDiv;
+    };
+
+    // Handle chat submission
+    const handleChat = async () => {
+        const userMessage = chatInput.value.trim();
+        if (!userMessage) return;
+
+        // Clear input
+        chatInput.value = "";
+
+        // Append user's message
+        chatbox.appendChild(createChatDiv(userMessage, "user-message", false));
+        chatbox.scrollTo(0, chatbox.scrollHeight); // Scroll to the last message
+
+        // Append bot's placeholder message
+        const botMessageDiv = createChatDiv("...", "bot-message", true);
+        chatbox.appendChild(botMessageDiv);
+        chatbox.scrollTo(0, chatbox.scrollHeight); // Scroll to the last message
+
+        try {
+            // Fetch bot's response
+            const response = await fetch('/get_response', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ user_input: userMessage }),
+            });
+            const data = await response.json();
+            botMessageDiv.innerHTML = `<strong>Bot:</strong> ${data.response} <span style="font-size: 0.8em; color: white;">${new Date().toLocaleString()}</span>`;
+        } catch (error) {
+            botMessageDiv.innerHTML = `<strong>Bot:</strong> Oops! Something went wrong. Please try again.`;
+        }
+
+        chatbox.scrollTo(0, chatbox.scrollHeight); // Ensure the chat scrolls to the bottom
+    };
+
+    // Load chat history
+    const loadChatHistory = async () => {
+        try {
+            const response = await fetch('/get_history');
+            const data = await response.json();
+            const historyContainer = document.getElementById('chat-history');
+            historyContainer.innerHTML = '';
+
+            // Display history in the same order as received
+            data.history.forEach((item) => {
+                const historyItem = document.createElement('div');
+                historyItem.classList.add('history-item');
+                historyItem.innerHTML = `
+                    <div class="timestamp">${item.timestamp}</div>
+                    <div class="message user-message">You: ${item.user}</div>
+                    <div class="message bot-message">Bot: ${item.bot}</div>
+                `;
+                historyContainer.appendChild(historyItem);
+            });
+        } catch (error) {
+            console.error('Error loading chat history:', error);
+        }
+    };
+
+    // Event Listeners
+    sendChatBtn.addEventListener("click", handleChat);
+
+    // Load chat history
+    document.getElementById("history-btn")?.addEventListener("click", () => {
+        historyModal.style.display = "block";
+        loadChatHistory();
+    });
+
+    document.getElementById("about-btn")?.addEventListener("click", () => {
+        aboutModal.style.display = "block";
+    });
+
+    closeBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            historyModal.style.display = "none";
+            aboutModal.style.display = "none";
+        });
+    });
+
+    window.addEventListener("click", (e) => {
+        if (e.target === historyModal || e.target === aboutModal) {
+            historyModal.style.display = "none";
+            aboutModal.style.display = "none";
+        }
+    });
+    
+</script>
+{% endblock %}
