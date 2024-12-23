@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Assistant Chatbot</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <title>CampusConnect Bot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/ionicons@6.0.0/dist/ionicons/ionicons.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -18,16 +19,18 @@
             </ul>
         </div>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <header>
-                <h1>Student Assistant Chatbot</h1>
-            </header>
-            <main>
-                {% block content %}
-                {% endblock %}
-            </main>
-        </div>
+         <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <img src="{{ url_for('static', filename='imgs/logopng.png') }}" alt="CampusConnect Logo" 
+                 style="width: 65px; height: 65px; vertical-align: middle; margin-right: 7px;">
+            <h1 style="display: inline; vertical-align: middle">CampusConnect Bot</h1>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
     </div>
 </body>
 </html>

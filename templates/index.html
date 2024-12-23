@@ -1,24 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Chat with the Bot</h2>
+<h2>Chat with the CampusConnect Bot</h2>
 
 <!-- Chat Box displaying the entire chat history -->
 <div class="chat-box" id="chatbox" style="height: 450px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; background-color: #fafafa;">
     <!-- Display messages in their original order -->
     {% for message in chat_history %}
     <div class="message user-message">
-        <strong>You:</strong> {{ message.user }}
+        <strong> You:</strong> {{ message.user }}
     </div>
     <div class="message bot-message">
-        <strong>Bot:</strong> {{ message.bot }}
+        <strong><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> {{ message.bot }}
     </div>
     {% endfor %}
 </div>
 
 <!-- Form for user input -->
 <div class="chat-form" style="margin-top: 20px; display: flex;">
-    <textarea id="chat-input" placeholder="Type your message..." style="flex: 1; padding: 10px; height: 50px; border: 1px solid #ccc; border-radius: 5px; resize: none;"></textarea>
+    <textarea id="chat-input" autofocus placeholder="Type your message..." style="flex: 1; padding: 10px; height: 50px; border: 1px solid #ccc; border-radius: 5px; resize: none;"></textarea>
     <button id="send-btn" style="padding: 10px 20px; margin-left: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
         Send
     </button>
@@ -46,7 +46,7 @@
     const sendChatBtn = document.querySelector("#send-btn");
     const historyModal = document.getElementById("history-modal");
     const aboutModal = document.getElementById("about-modal");
-    const closeBtns = document.querySelectorAll(".close-modal");
+    const closeBtns = document.querySelectorAll(".close-modal");    
 
     // Function to create a chat message (bot or user)
     const createChatDiv = (message, className, isBot = false) => {
@@ -62,7 +62,7 @@
             hour12: true,
         });
 
-        messageDiv.innerHTML = `<strong>${isBot ? "Bot:" : "You:"}</strong> ${message} <span style="font-size: 0.8em; color: gray;">${timestamp}</span>`;
+        messageDiv.innerHTML = `<strong >${isBot ? "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'>" : "<img src='https://cdn-icons-png.flaticon.com/128/4537/4537028.png' style='width:36px;height:36px;border-radius:100%;'>"}</strong><span style='font-size:1.2rem'>${message}</span> <span style="font-size: 0.7em; color: gray;">${timestamp}</span>`;
         return messageDiv;
     };
 
@@ -93,9 +93,9 @@
                 body: JSON.stringify({ user_input: userMessage }),
             });
             const data = await response.json();
-            botMessageDiv.innerHTML = `<strong>Bot:</strong> ${data.response} <span style="font-size: 0.8em; color: white;">${new Date().toLocaleString()}</span>`;
+            botMessageDiv.innerHTML = `<strong ><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> <span style='font-size:1.2rem'>${data.response}</span> <span style="font-size: 0.7em; color: white;">${new Date().toLocaleString()}</span>`;
         } catch (error) {
-            botMessageDiv.innerHTML = `<strong>Bot:</strong> Oops! Something went wrong. Please try again.`;
+            botMessageDiv.innerHTML = `<strong ><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> <span style='font-size:1.2rem'>Oops! Something went wrong. Please try again.</span>`;
         }
 
         chatbox.scrollTo(0, chatbox.scrollHeight); // Ensure the chat scrolls to the bottom
@@ -116,7 +116,7 @@
                 historyItem.innerHTML = `
                     <div class="timestamp">${item.timestamp}</div>
                     <div class="message user-message">You: ${item.user}</div>
-                    <div class="message bot-message">Bot: ${item.bot}</div>
+                    <div class="message bot-message"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'> ${item.bot}</div>
                 `;
                 historyContainer.appendChild(historyItem);
             });
@@ -127,6 +127,13 @@
 
     // Event Listeners
     sendChatBtn.addEventListener("click", handleChat);
+
+    document.getElementById("chat-input").addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) { // Check if Enter is pressed without Shift
+        e.preventDefault(); // Prevent the default action of adding a new line
+        sendChatBtn.click(); // Trigger the send button click event
+    }
+});
 
     // Load chat history
     document.getElementById("history-btn")?.addEventListener("click", () => {
