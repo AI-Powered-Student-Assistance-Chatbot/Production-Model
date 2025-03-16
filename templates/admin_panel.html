@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+    transition: background-color 0.2s ease-in-out;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    padding: 10px 15px;
+}
+
+tbody td:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    thead th,
+    tbody td {
+        padding: 8px 10px;
+    }
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            margin: 5px 0;
+        }
+        input, select {
+            width: calc(100% - 160px);
+            margin: 5px 0;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .toggle-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .toggle-buttons button {
+            margin: 0 10px;
+            background-color: #007bff;
+        }
+        .toggle-buttons button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .message.success {
+            color: green;
+            background-color: #d4edda;
+        }
+        .message.error {
+            color: red;
+            background-color: #f8d7da;
+        }
+        .hidden {
+            display: none;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .pagination a {
+            margin: 0 5px;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .pagination a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+
+    <!-- Message section -->
+    <div class="message" id="formMessage">
+        {% if message %}
+            <div class="message success">{{ message }}</div>
+        {% elif error %}
+            <div class="message error">{{ error }}</div>
+        {% endif %}
+    </div>
+
+    <div class="toggle-buttons">
+        <button id="showPlacement">Add Placement Info</button>
+    </div>
+
+    <div class="form-container">
+        <!-- Admission Form -->
+        <!-- Placement Form -->
+        <form method="POST" action="/admin" id="placementForm" class="hidden">
+            <h2>Add Placement Info</h2>
+            <input type="hidden" name="form_type" value="placement">
+            <label for="name_of_student">Student Name:</label>
+            <input type="text" id="name_of_student" name="name_of_student" required><br>
+            <label for="batch">Batch:</label>
+            <input type="text" id="batch" name="batch" required><br>
+            <label for="placementtype">Placement Type:</label>
+            <select id="placementtype" name="placementtype" required>
+                <option value="Internship">On Campus</option>
+                <option value="Full-time">Off-Campus</option>
+            </select><br>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required><br>
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required><br>
+            <button type="submit">Add Placement Info</button>
+        </form>
+
+        <!-- Display placement info with pagination -->
+        <h2>Placement Information</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Batch</th>
+                    <th>Placement Type</th>
+                    <th>Company</th>
+                    <th>Department</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for placement in placements.items %}
+                    <tr>
+                        <td>{{ placement.student_name }}</td>
+                        <td>{{ placement.batch }}</td>
+                        <td>{{ placement.placement_type }}</td>
+                        <td>{{ placement.name_of_company }}</td>
+                        <td>{{ placement.department }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Pagination controls -->
+        <div class="pagination">
+            {% if placements.has_prev %}
+                <a href="{{ url_for('show_placements', page=placements.prev_num) }}">Previous</a>
+            {% endif %}
+            <span>Page {{ placements.page }} of {{ placements.pages }}</span>
+            {% if placements.has_next %}
+                <a href="{{ url_for('show_placements', page=placements.next_num) }}">Next</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        // Toggle forms visibility
+        document.getElementById('showAdmission').addEventListener('click', function () {
+            document.getElementById('admissionForm').classList.remove('hidden');
+            document.getElementById('placementForm').classList.add('hidden');
+        });
+
+        document.getElementById('showPlacement').addEventListener('click', function () {
+            document.getElementById('placementForm').classList.remove('hidden');
+            document.getElementById('admissionForm').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

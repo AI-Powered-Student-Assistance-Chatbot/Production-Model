@@ -21,10 +21,19 @@
 
          <!-- Main Content -->
     <div class="main-content">
-        <header>
-            <img src="{{ url_for('static', filename='imgs/logopng.png') }}" alt="CampusConnect Logo" 
-                 style="width: 65px; height: 65px; vertical-align: middle; margin-right: 7px;">
-            <h1 style="display: inline; vertical-align: middle">CampusConnect Bot</h1>
+        <header style="display: flex; justify-content: space-between;">
+            <div style="margin-left: 350px;">
+                <img src="{{ url_for('static', filename='imgs/logopng.png') }}" alt="CampusConnect Logo" 
+                style="width: 65px; height: 65px; vertical-align: middle; margin-right: 7px;">
+           <h1 style="display: inline; vertical-align: middle">CampusConnect Bot</h1>
+            </div>
+           
+            <div>
+                <button id="admin-btn" style="background-color:#3498db;color: black; border: none; padding: 4px; border-radius: 20px ; width: 100px; height: 50px; margin-left: 2rem;">
+                    Admin
+                </button>
+            </div>
+            
         </header>
         <main>
             {% block content %}

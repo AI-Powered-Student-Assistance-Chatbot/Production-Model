@@ -5,54 +5,249 @@
 
 <!-- Chat Box displaying the entire chat history -->
 <div class="chat-box" id="chatbox" style="height: 450px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; background-color: #fafafa;">
-    <!-- Display messages in their original order -->
-    {% for message in chat_history %}
-    <div class="message user-message">
-        <strong> You:</strong> {{ message.user }}
-    </div>
-    <div class="message bot-message">
-        <strong><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> {{ message.bot }}
-    </div>
-    {% endfor %}
+    <!-- Messages will be dynamically added -->
 </div>
+<!-- <style>
+    #voice-btn {
+    padding: 12px 24px;
+    background-color: #f32121;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
 
+#voice-btn img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+#voice-btn:hover {
+    background-color: #e51e1e;
+    box-shadow: 0 6px 12px rgba(33, 150, 243, 0.3);
+}
+
+#voice-btn:active {
+    background-color: #d21919;
+    box-shadow: 0 2px 6px rgba(33, 150, 243, 0.4);
+}
+
+#voice-btn img:hover {
+    transform: scale(1.1);
+}
+
+/* Mic On State */
+#voice-btn.active {
+    background-color: #f44336;
+    box-shadow: 0 6px 12px rgba(244, 67, 54, 0.3);
+}
+
+#voice-btn.active:hover {
+    background-color: #d32f2f;
+    box-shadow: 0 6px 12px rgba(211, 47, 47, 0.4);
+}
+
+</style> -->
 <!-- Form for user input -->
 <div class="chat-form" style="margin-top: 20px; display: flex;">
-    <textarea id="chat-input" autofocus placeholder="Type your message..." style="flex: 1; padding: 10px; height: 50px; border: 1px solid #ccc; border-radius: 5px; resize: none;"></textarea>
-    <button id="send-btn" style="padding: 10px 20px; margin-left: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        Send
-    </button>
-</div>
-<!-- Modals for History and About -->
-<div id="history-modal" class="modal" style="display: none;">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h3>Chat History</h3>
-        <div id="chat-history"></div>
-    </div>
-</div>
+    <textarea id="chat-input" autofocus placeholder="Type your message or use voice..." style="flex: 1; padding: 10px; height: 50px; border: 1px solid #ccc; border-radius: 5px; resize: none;"></textarea>
+    <button id="send-btn" style="
+    padding: 13px 25px;
+    background-color: #1e1e1e;
+    color: white;
+    border: 2px solid #2196F3;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+">
+    Send
+</button>
+    <button id="voice-btn" style="
+    padding: 10px 8px;
+    background-color: #1e1e1e;
+    color: white;
+    border: 2px solid #2196F3;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+">
+    <img src="/static/imgs/mic off.png" alt="Voice" width="24" height="24" style="
+        border-radius: 50%;
+        transition: transform 0.3s;
+    ">
+    Voice
+</button>
 
-<div id="about-modal" class="modal" style="display: none;">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h3>About the Bot</h3>
-        <p>This bot uses Flask and a Machine Learning model to interact with you!</p>
-    </div>
+
+    
 </div>
 
 <script>
+    // Function to add a message to the chatbox
+    function addMessage(content, isTyping = false, fontSize = "16px") {
+        const chatbox = document.getElementById('chatbox');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = isTyping ? 'message bot-message typing' : 'message bot-message';
+        messageDiv.innerHTML = isTyping
+            ? `<strong><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> Typing...`
+            : `<strong><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> ${content}`;
+        messageDiv.style.fontSize = fontSize;
+        chatbox.appendChild(messageDiv);
+        chatbox.scrollTop = chatbox.scrollHeight;
+    }
+
+    // Initial messages
+    window.onload = function () {
+        setTimeout(() => {
+            addMessage("", true);
+            setTimeout(() => {
+                const typingMessage = document.querySelector('.typing');
+                if (typingMessage) typingMessage.remove();
+                let mes = "Hey I am Sanjivani CampusConnect Bot!";
+                addMessage(mes, false, "20px");
+            }, 1500);
+        }, 1500);
+
+        setTimeout(() => {
+            addMessage("", true);
+            setTimeout(() => {
+                const typingMessage = document.querySelector('.typing');
+                if (typingMessage) typingMessage.remove();
+                let mes1 = "How can I assist you today? Feel free to ask any questions about our institution.";
+                addMessage(mes1, false, "20px");
+            }, 1500);
+        }, 2000);
+    };
+
     const chatbox = document.querySelector("#chatbox");
     const chatInput = document.querySelector("#chat-input");
     const sendChatBtn = document.querySelector("#send-btn");
+    const voiceBtn = document.querySelector("#voice-btn");
     const historyModal = document.getElementById("history-modal");
     const aboutModal = document.getElementById("about-modal");
-    const closeBtns = document.querySelectorAll(".close-modal");    
+    const closeBtns = document.querySelectorAll(".close-modal");
 
-    // Function to create a chat message (bot or user)
+    // Speech Recognition Setup
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+        const recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = true;
+        recognition.lang = 'en-US';
+
+        let isRecognizing = false;
+
+        // Handle voice button click
+        voiceBtn.addEventListener('click', () => {
+    if (!isRecognizing) {
+        try {
+            recognition.start();
+            voiceBtn.classList.add('active');
+            voiceBtn.innerHTML = '<img src="/static/imgs/mic on.png" alt="Voice" width="24" height="24" >';
+            chatInput.placeholder = 'Speak now...';
+            isRecognizing = true;
+        } catch (error) {
+            console.error('Error starting recognition:', error);
+            addMessage(`Error starting voice recognition: ${error.message}`);
+            resetVoiceButton();
+        }
+    } else {
+        recognition.stop();
+        resetVoiceButton();
+    }
+});
+
+        // When speech is detected
+        recognition.onresult = (event) => {
+            let interimTranscript = '';
+            let finalTranscript = '';
+
+            for (let i = event.resultIndex; i < event.results.length; i++) {
+                const transcript = event.results[i][0].transcript;
+                if (event.results[i].isFinal) {
+                    finalTranscript += transcript;
+                } else {
+                    interimTranscript += transcript;
+                }
+            }
+
+            chatInput.value = finalTranscript + interimTranscript;
+        };
+
+        // When recognition ends naturally
+        recognition.onend = () => {
+            if (isRecognizing) {
+                isRecognizing = false;
+                resetVoiceButton();
+                if (chatInput.value.trim()) {
+                    sendChatBtn.click();
+                }
+            }
+        };
+
+        // Enhanced error handling
+        recognition.onerror = (event) => {
+            isRecognizing = false;
+            resetVoiceButton();
+            let errorMessage = 'Sorry, there was an error with voice recognition. ';
+            switch (event.error) {
+                case 'no-speech':
+                    errorMessage += 'No speech was detected. Please try again.';
+                    break;
+                case 'audio-capture':
+                    errorMessage += 'Microphone not detected or accessible. Please check your device.';
+                    break;
+                case 'not-allowed':
+                    errorMessage += 'Microphone access was denied. Please allow microphone permissions.';
+                    break;
+                case 'network':
+                    errorMessage += 'Network error occurred. Please check your internet connection.';
+                    break;
+                default:
+                    errorMessage += `Error: ${event.error}. Please try again.`;
+                    break;
+            }
+            console.error('Speech recognition error:', event.error);
+            addMessage(errorMessage);
+        };
+
+        // Reset voice button state
+        function resetVoiceButton() {
+    voiceBtn.classList.remove('active');
+    voiceBtn.innerHTML = '<img src="/static/imgs/mic off.png" alt="Voice" width="24" height="24">';
+    chatInput.placeholder = 'Type your message or use voice...';
+}
+    } else {
+        voiceBtn.style.display = 'none';
+        addMessage('Voice recognition is not supported in this browser.');
+        console.log('Speech recognition not supported in this browser');
+    }
+
+    // Function to create a chat message
     const createChatDiv = (message, className, isBot = false) => {
         const messageDiv = document.createElement("div");
         messageDiv.classList.add("message", className);
-
         const timestamp = new Date().toLocaleString("en-US", {
             year: "numeric",
             month: "numeric",
@@ -61,8 +256,7 @@
             minute: "2-digit",
             hour12: true,
         });
-
-        messageDiv.innerHTML = `<strong >${isBot ? "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'>" : "<img src='https://cdn-icons-png.flaticon.com/128/4537/4537028.png' style='width:36px;height:36px;border-radius:100%;'>"}</strong><span style='font-size:1.2rem'>${message}</span> <span style="font-size: 0.7em; color: gray;">${timestamp}</span>`;
+        messageDiv.innerHTML = `<strong>${isBot ? "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'>" : "<img src='https://cdn-icons-png.flaticon.com/128/4537/4537028.png' style='width:36px;height:36px;border-radius:100%;'>"}</strong><span style='font-size:1.2rem'>${message}</span> <span style="font-size: 0.7em; color: gray;">${timestamp}</span>`;
         return messageDiv;
     };
 
@@ -71,20 +265,15 @@
         const userMessage = chatInput.value.trim();
         if (!userMessage) return;
 
-        // Clear input
         chatInput.value = "";
-
-        // Append user's message
         chatbox.appendChild(createChatDiv(userMessage, "user-message", false));
-        chatbox.scrollTo(0, chatbox.scrollHeight); // Scroll to the last message
+        chatbox.scrollTo(0, chatbox.scrollHeight);
 
-        // Append bot's placeholder message
         const botMessageDiv = createChatDiv("...", "bot-message", true);
         chatbox.appendChild(botMessageDiv);
-        chatbox.scrollTo(0, chatbox.scrollHeight); // Scroll to the last message
+        chatbox.scrollTo(0, chatbox.scrollHeight);
 
         try {
-            // Fetch bot's response
             const response = await fetch('/get_response', {
                 method: 'POST',
                 headers: {
@@ -93,12 +282,11 @@
                 body: JSON.stringify({ user_input: userMessage }),
             });
             const data = await response.json();
-            botMessageDiv.innerHTML = `<strong ><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> <span style='font-size:1.2rem'>${data.response}</span> <span style="font-size: 0.7em; color: white;">${new Date().toLocaleString()}</span>`;
+            botMessageDiv.innerHTML = `<strong><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> <span style='font-size:1.2rem'>${data.response}</span> <span style="font-size: 0.7em; color: white;">${new Date().toLocaleString()}</span>`;
         } catch (error) {
-            botMessageDiv.innerHTML = `<strong ><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> <span style='font-size:1.2rem'>Oops! Something went wrong. Please try again.</span>`;
+            botMessageDiv.innerHTML = `<strong><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> <span style='font-size:1.2rem'>Oops! Something went wrong. Please try again.</span>`;
         }
-
-        chatbox.scrollTo(0, chatbox.scrollHeight); // Ensure the chat scrolls to the bottom
+        chatbox.scrollTo(0, chatbox.scrollHeight);
     };
 
     // Load chat history
@@ -109,7 +297,6 @@
             const historyContainer = document.getElementById('chat-history');
             historyContainer.innerHTML = '';
 
-            // Display history in the same order as received
             data.history.forEach((item) => {
                 const historyItem = document.createElement('div');
                 historyItem.classList.add('history-item');
@@ -128,14 +315,17 @@
     // Event Listeners
     sendChatBtn.addEventListener("click", handleChat);
 
-    document.getElementById("chat-input").addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && !e.shiftKey) { // Check if Enter is pressed without Shift
-        e.preventDefault(); // Prevent the default action of adding a new line
-        sendChatBtn.click(); // Trigger the send button click event
-    }
-});
+    chatInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && !e.shiftKey) {
+            e.preventDefault();
+            sendChatBtn.click();
+        }
+    });
 
-    // Load chat history
+    document.getElementById("admin-btn")?.addEventListener("click", () => {
+        window.location.href = "/admin";
+    });
+
     document.getElementById("history-btn")?.addEventListener("click", () => {
         historyModal.style.display = "block";
         loadChatHistory();
@@ -158,6 +348,23 @@
             aboutModal.style.display = "none";
         }
     });
-    
 </script>
+
+<!-- Modals for History and About -->
+<div id="history-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal">×</span>
+        <h3>Chat History</h3>
+        <div id="chat-history"></div>
+    </div>
+</div>
+
+<div id="about-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal">×</span>
+        <h3>About the Bot</h3>
+        <p>This bot uses Flask and a Machine Learning model to interact with you!</p>
+    </div>
+</div>
+
 {% endblock %}

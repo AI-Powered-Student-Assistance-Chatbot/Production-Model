@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Entry</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url("{{ url_for('static', filename='imgs/sanjivani.png') }}"); /* Background image */
+            background-size: cover; /* Ensure background covers entire screen */
+            background-position: center; /* Center the background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #bot-icon-container {
+            text-align: center; /* Center the icon and text */
+            position: absolute;
+            right: 20px; /* Position to the right */
+            bottom: 20px; /* Position to the bottom */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            animation: bounce 1.5s ease-in-out; /* Run the animation for 5 seconds */
+            animation-iteration-count: 7;
+        }
+
+        /* Keyframes for the bounce animation */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0); /* Initial position */
+            }
+            50% {
+                transform: translateY(-10px); /* Move up */
+            }
+        }
+
+        #bot-icon {
+            width: 70px; /* Smaller icon size */
+            height: 70px;
+            background-image: url("{{ url_for('static', filename='imgs/logo.jpeg') }}"); /* Bot icon */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center; /* Center the icon within the div */
+            cursor: pointer;
+            border-radius: 50%; /* Make the icon round */
+            border: 5px solid #51b77e; /* Optional border around icon */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow for floating effect */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+        }
+
+        #bot-icon:hover {
+            transform: scale(1.1); /* Slightly enlarge on hover */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+        }
+
+        #bot-text {
+            font-size: 14px; /* Small text */
+            color: #000000;
+            margin-top: 8px; /* Spacing between icon and text */
+            font-family: Arial, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bot-icon-container">
+        <div id="bot-icon" onclick="goToChat()"></div>
+        <div id="bot-text">Ask for help</div>
+    </div>
+
+    <script>
+        function goToChat() {
+            window.location.href = '/index';  // Navigate to the index page dynamically served by Flask
+        }
+    </script>
+</body>
+</html>

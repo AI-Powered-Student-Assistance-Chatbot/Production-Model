@@ -10,11 +10,10 @@
             "how r u "
         ],
         "responses": [
-            "Hi there",
-            "Hello",
-            "Hey",
-            "I'm fine, thank you",
-            "Nothing much"
+            "Hello,I am Sanjivani CampusConnect Bot",
+            "Hey,I am Sanjivani CampusConnect Bot",
+            "Hi,I am Sanjivani CampusConnect Bot"
+          
         ]
     },
     {
@@ -116,7 +115,9 @@
         "patterns": [
             "Who is the head of IT?",
             "Who is HOD of IT?",
+            "who is Head of department of Information Technology",
             "Who is the HOD of IT department?",
+            "who is the HOD of Information Technology department",
             "Tell me about the IT head",
             "Who manages the IT department?",
             "Who is in charge of IT?"
@@ -196,10 +197,11 @@
                 "how to take admission in sanjivani",
                 "how is admission process in sanjivani",
                 "tell me about admission process in sanjivani",
-                "can you tell me about how can i take admission in sanjivani"
+                "can you tell me about how can i take admission in sanjivani",
+                "how do i take admission in sanjivani college of engineering"
             ],
             "responses": [
-                "You can get admission in Sanjivani based on your Mht-Cet score and Jee Mains score"
+                "You can get admission in Sanjivani based on your Mht-Cet score and Jee Mains score.You can check the cutoff here."
             ]
         },
         {
