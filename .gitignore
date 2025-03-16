@@ -1,2 +1,3 @@
 # Node modules (if any front-end code uses npm)
 node_modules/
+venv/

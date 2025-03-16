@@ -233,7 +233,6 @@ def admin_panel_post():
             placements = SanjivaniPlacementInfo.query.paginate(page=page, per_page=per_page, error_out=False)
     
             return render_template('admin_panel.html', placements=placements, error=f"Error inserting placement data: {str(e)}")
-
     return render_template('admin_panel.html')
 
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
