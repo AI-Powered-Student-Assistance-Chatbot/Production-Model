@@ -1,46 +1,83 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Conversation History</h2>
+    <div class="history-container">
+        <h2 class="history-title">Conversation History</h2>
 
-{% if conversation %}
-    <ul class="history-list">
-        {% for chat in conversation %}
-        <li class="chat-item">
-            <div><strong>User:</strong> {{ chat.user }}</div>
-            <div><strong>Chatbot:</strong> {{ chat.bot }}</div>
-            <div><em>Timestamp: {{ chat.timestamp }}</em></div>
-        </li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>No conversation history available. Start chatting to create a log!</p>
-{% endif %}
+        {% if conversation %}
+            <ul class="history-list">
+                {% for chat in conversation %}
+                <li class="chat-item {% if loop.index is even %}even-chat{% else %}odd-chat{% endif %}">
+                    <div class="chat-user"><strong>User:</strong> {{ chat.user }}</div>
+                    <div class="chat-bot"><strong>Chatbot:</strong> {{ chat.bot }}</div>
+                    <div class="chat-timestamp"><em>{{ chat.timestamp }}</em></div>
+                </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="no-history">No conversation history available. Start chatting to create a log!</p>
+        {% endif %}
+    </div>
+{% endblock %}
 
+{% block styles %}
 <style>
+    .history-container {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .history-title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
     .history-list {
         list-style: none;
         padding: 0;
-        max-width: 800px;
-        margin: 20px auto;
     }
     .chat-item {
-        background: #f9f9f9;
         padding: 15px;
-        border: 1px solid #ddd;
         border-radius: 8px;
-        margin-bottom: 15px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 12px;
+        transition: transform 0.2s ease-in-out;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
-    .chat-item div {
-        margin: 5px 0;
+    .chat-item:hover {
+        transform: scale(1.02);
     }
-    strong {
-        color: #2c3e50;
+    .even-chat {
+        background: #ecf0f1;
+        border-left: 5px solid #3498db;
     }
-    em {
+    .odd-chat {
+        background: #fefefe;
+        border-left: 5px solid #2ecc71;
+    }
+    .chat-user, .chat-bot {
+        font-size: 16px;
+        font-weight: 500;
+        color: #34495e;
+    }
+    .chat-timestamp {
+        font-size: 14px;
         color: #7f8c8d;
-        font-size: 0.9em;
+        text-align: right;
+        font-style: italic;
+    }
+    .no-history {
+        text-align: center;
+        font-size: 18px;
+        color: #e74c3c;
+        margin-top: 20px;
     }
 </style>
 {% endblock %}

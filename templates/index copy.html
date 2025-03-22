@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Chat with the CampusConnect Bot</h2>
+<!-- <h2>Chat with the CampusConnect Bot</h2> -->
 
 <!-- Chat Box displaying the entire chat history -->
 <div class="chat-box" id="chatbox" style="
@@ -20,8 +20,7 @@
 <!-- https://wallpapercave.com/wp/wp6988787.png -->
 
 <!-- Form for user input -->
-<div class="chat-form"
-    style="margin-top: 20px; background-color:#eff2f4; display: flex; gap: 10px; align-items: center;">
+<div class="chat-form" style="margin-top: 20px; background-color:#eff2f4; display: flex; gap: 10px; align-items: center;">
     <textarea id="chat-input" autofocus placeholder="Type your message or use voice..." style="
         flex: 1;
         padding: 15px;
@@ -133,23 +132,23 @@
 
         // Handle voice button click
         voiceBtn.addEventListener('click', () => {
-            if (!isRecognizing) {
-                try {
-                    recognition.start();
-                    voiceBtn.classList.add('active');
-                    voiceBtn.innerHTML = '<img src="/static/imgs/mic on.png" alt="Voice" width="24" height="24" >';
-                    chatInput.placeholder = 'Speak now...';
-                    isRecognizing = true;
-                } catch (error) {
-                    console.error('Error starting recognition:', error);
-                    addMessage(`Error starting voice recognition: ${error.message}`);
-                    resetVoiceButton();
-                }
-            } else {
-                recognition.stop();
-                resetVoiceButton();
-            }
-        });
+    if (!isRecognizing) {
+        try {
+            recognition.start();
+            voiceBtn.classList.add('active');
+            voiceBtn.innerHTML = '<img src="/static/imgs/mic on.png" alt="Voice" width="24" height="24" >';
+            chatInput.placeholder = 'Speak now...';
+            isRecognizing = true;
+        } catch (error) {
+            console.error('Error starting recognition:', error);
+            addMessage(`Error starting voice recognition: ${error.message}`);
+            resetVoiceButton();
+        }
+    } else {
+        recognition.stop();
+        resetVoiceButton();
+    }
+});
 
         // When speech is detected
         recognition.onresult = (event) => {
@@ -207,10 +206,10 @@
 
         // Reset voice button state
         function resetVoiceButton() {
-            voiceBtn.classList.remove('active');
-            voiceBtn.innerHTML = '<img src="/static/imgs/mic off.png" alt="Voice" width="24" height="24">';
-            chatInput.placeholder = 'Type your message or use voice...';
-        }
+    voiceBtn.classList.remove('active');
+    voiceBtn.innerHTML = '<img src="/static/imgs/mic off.png" alt="Voice" width="24" height="24">';
+    chatInput.placeholder = 'Type your message or use voice...';
+}
     } else {
         voiceBtn.style.display = 'none';
         addMessage('Voice recognition is not supported in this browser.');
@@ -218,71 +217,49 @@
     }
 
     // Function to create a chat message
-   // Function to create a chat message
-const createChatDiv = (message, className, isBot = false) => {
-    const messageDiv = document.createElement("div");
-    messageDiv.classList.add("message", className);
-    const timestamp = new Date().toLocaleString("en-US", {
-        year: "numeric",
-        month: "numeric",
-        day: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true,
-    });
-    
-    // Use a container for the message content to properly handle HTML
-    messageDiv.innerHTML = `
-        <strong>${isBot ? "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'>" : "<img src='https://cdn-icons-png.flaticon.com/128/4537/4537028.png' style='width:36px;height:36px;border-radius:100%;'>"}</strong>
-        <div class="message-content" style='font-size:1.2rem'>${message}</div>
-        <span style="font-size: 0.7em; color: gray;">${timestamp}</span>
-    `;
-    return messageDiv;
-};
+    const createChatDiv = (message, className, isBot = false) => {
+        const messageDiv = document.createElement("div");
+        messageDiv.classList.add("message", className);
+        const timestamp = new Date().toLocaleString("en-US", {
+            year: "numeric",
+            month: "numeric",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: true,
+        });
+        messageDiv.innerHTML = `<strong>${isBot ? "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'>" : "<img src='https://cdn-icons-png.flaticon.com/128/4537/4537028.png' style='width:36px;height:36px;border-radius:100%;'>"}</strong><span style='font-size:1.2rem'>${message}</span> <span style="font-size: 0.7em; color: gray;">${timestamp}</span>`;
+        return messageDiv;
+    };
 
     // Handle chat submission
-    // Handle chat submission with better error handling
-const handleChat = async () => {
-    const userMessage = chatInput.value.trim();
-    if (!userMessage) return;
+    const handleChat = async () => {
+        const userMessage = chatInput.value.trim();
+        if (!userMessage) return;
 
-    chatInput.value = "";
-    chatbox.appendChild(createChatDiv(userMessage, "user-message", false));
-    chatbox.scrollTo(0, chatbox.scrollHeight);
+        chatInput.value = "";
+        chatbox.appendChild(createChatDiv(userMessage, "user-message", false));
+        chatbox.scrollTo(0, chatbox.scrollHeight);
 
-    // Show typing indicator
-    const botMessageDiv = createChatDiv("...", "bot-message", true);
-    chatbox.appendChild(botMessageDiv);
-    chatbox.scrollTo(0, chatbox.scrollHeight);
+        const botMessageDiv = createChatDiv("...", "bot-message", true);
+        chatbox.appendChild(botMessageDiv);
+        chatbox.scrollTo(0, chatbox.scrollHeight);
 
-    try {
-        const response = await fetch('/get_response', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ user_input: userMessage }),
-        });
-        
-        if (!response.ok) {
-            throw new Error(`Server responded with status: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        
-        // Check if the response contains an error message
-        if (data.response && data.response.includes("Error")) {
-            botMessageDiv.innerHTML = `<strong><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> <span style='font-size:1.2rem'>I'm sorry, but I couldn't retrieve that information. Please try a different question.</span> <span style="font-size: 0.7em; color: white;">${new Date().toLocaleString()}</span>`;
-        } else {
-            // Update the bot message with the response
+        try {
+            const response = await fetch('/get_response', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ user_input: userMessage }),
+            });
+            const data = await response.json();
             botMessageDiv.innerHTML = `<strong><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> <span style='font-size:1.2rem'>${data.response}</span> <span style="font-size: 0.7em; color: white;">${new Date().toLocaleString()}</span>`;
+        } catch (error) {
+            botMessageDiv.innerHTML = `<strong><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> <span style='font-size:1.2rem'>Oops! Something went wrong. Please try again.</span>`;
         }
-    } catch (error) {
-        console.error("Chat error:", error);
-        botMessageDiv.innerHTML = `<strong><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNRx3pDtE9O3e5a8shWrT6hTkz2hgvdFa30g&s' style='width:36px;height:36px;border-radius:100%;'></strong> <span style='font-size:1.2rem'>Oops! Something went wrong. Please try a different question or try again later.</span>`;
-    }
-    chatbox.scrollTo(0, chatbox.scrollHeight);
-};
+        chatbox.scrollTo(0, chatbox.scrollHeight);
+    };
 
     // // Load chat history
     // const loadChatHistory = async () => {

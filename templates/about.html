@@ -1,7 +1,42 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>About Us</h2>
-<p>This chatbot is designed to assist students by providing quick answers to common queries. It is built using Flask, NLP techniques, and Logistic Regression for intent recognition.</p>
-<p>The project demonstrates the power of natural language processing and showcases how web-based chatbots can be used in real-world scenarios.</p>
+    <div class="about-container">
+        <h2 class="about-title">About Us</h2>
+        <p class="about-text">
+            CampusConnect Bot is designed to assist students by providing quick answers to common queries. 
+            Built using Flask, NLP techniques, and Logistic Regression, it efficiently recognizes intent 
+            and delivers accurate responses.
+        </p>
+        <p class="about-text">
+            This project highlights the power of natural language processing (NLP) and demonstrates how 
+            web-based chatbots can improve accessibility, streamline communication, and enhance student engagement.
+        </p>
+    </div>
+{% endblock %}
+
+{% block styles %}
+<style>
+    .about-container {
+        max-width: 850px;
+        margin: 40px auto;
+        padding: 30px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .about-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+    .about-text {
+        font-size: 18px;
+        color: #34495e;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+</style>
 {% endblock %}
