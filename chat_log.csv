@@ -12751,3 +12751,70 @@ who are placed in deloitte ?,"
 </table>
             </div>
              [Table data included]",2025-03-23 03:59:34
+hii,"Hello,I am Sanjivani CampusConnect Bot",2025-03-23 10:13:53
+what is the placement stats,"
+            <div class=""bot-response"">
+                <div class=""explanation"">2 internships: Accenture and Google.</div>
+                <style>
+                    .data-table {
+                        width: 100%;
+                        margin-top: 15px;
+                        border-collapse: collapse;
+                        font-size: 14px;
+                    }
+                    .data-table th {
+                        background-color: #2196F3;
+                        color: white;
+                        padding: 8px;
+                        text-align: left;
+                        border: 1px solid #ddd;
+                    }
+                    .data-table td {
+                        padding: 8px;
+                        border: 1px solid #ddd;
+                    }
+                    .data-table tr:nth-child(even) {
+                        background-color: #f2f2f2;
+                    }
+                    .data-table tr:hover {
+                        background-color: #ddd;
+                    }
+                    .explanation {
+                        margin-bottom: 10px;
+                        font-weight: bold;
+                    }
+                </style>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>id</th>
+      <th>student_name</th>
+      <th>batch</th>
+      <th>placement_type</th>
+      <th>name_of_company</th>
+      <th>department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>19</td>
+      <td>Jalindranath</td>
+      <td>Information technolo</td>
+      <td>Internship</td>
+      <td>Accenture</td>
+      <td>information technology</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Prathamesh Bankar</td>
+      <td>2023</td>
+      <td>Internship</td>
+      <td>Google</td>
+      <td>information technology</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 10:14:07
+hi,"Hi,I am Sanjivani CampusConnect Bot",2025-03-23 10:14:38
+hi,"Hello,I am Sanjivani CampusConnect Bot",2025-03-23 10:14:39
