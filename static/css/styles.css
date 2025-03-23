@@ -111,7 +111,7 @@ main {
     margin-bottom: 15px;
     padding: 12px 15px;
     border-radius: 10px;
-    max-width: 75%;
+    max-width: auto;
     line-height: 1.6;
 }
 

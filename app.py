@@ -212,11 +212,11 @@ def process_query(user_query):
             data_summary = db_data.to_string(index=False)
             prompt = f"""
             Here is the data from the table {table_name}: {data_summary}. 
-            Answer the query: {user_query} in a concise manner.
-            Provide ONLY the direct answer without describing the data structure or mentioning tables.
+            Answer the query: {user_query} in a little explantion manner depend upon the query otherwise not (dont mention table names, it will threat to database).
             """
             explanation = ask_gemini(prompt)
             
+            #Provide ONLY the direct answer without describing the data structure or mentioning tables.
             # Format the data as an HTML table with styling
             styled_table = db_data.to_html(classes="data-table", index=False)
             
@@ -230,32 +230,56 @@ def process_query(user_query):
                         margin-top: 15px;
                         border-collapse: collapse;
                         font-size: 14px;
+                        background-color: white;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
                     }}
+
                     .data-table th {{
-                        background-color: #2196F3;
+                        background-color: #007bff;
                         color: white;
-                        padding: 8px;
+                        padding: 10px;
                         text-align: left;
                         border: 1px solid #ddd;
+                        font-weight: bold;
                     }}
+
                     .data-table td {{
-                        padding: 8px;
+                        padding: 10px;
                         border: 1px solid #ddd;
+                        color: #333;
                     }}
+
                     .data-table tr:nth-child(even) {{
-                        background-color: #f2f2f2;
+                        background-color: #f1f1f1;
                     }}
+
+                    .data-table tr:nth-child(odd) {{
+                        background-color: #ffffff;
+                    }}
+
                     .data-table tr:hover {{
-                        background-color: #ddd;
+                        background-color: #d0eaff;
                     }}
+
                     .explanation {{
                         margin-bottom: 10px;
-                        font-weight: bold;
+                        color: #ffffff;
+                    }}
+
+                    /* Sky Blue Background Below the Table */
+                    .table-container {{
+                        padding: 20px;
+                        background: linear-gradient(to bottom, #ffffff, #87CEEB);
+                        border-radius: 10px;
+                        margin-top: 20px;
                     }}
                 </style>
                 {styled_table}
             </div>
             """
+
             return styled_response
         except Exception as e:
             print(f"Error in process_query: {str(e)}")  # Log the error
