@@ -31015,3 +31015,7488 @@ who is hod of it,"Dr. M.A. Jawale mam, currently serving as the Head of the Depa
 who is the hod of  civil,My purpose is to assist you,2025-03-23 11:52:40
 who is the hod civil engineering,I am a chatbot,2025-03-23 11:52:52
 who is the hod of computer engineering,I can answer questions and provide assistance,2025-03-23 11:53:10
+who are you,"
+            <div class=""bot-response"">
+                <div class=""explanation"">I am Sanjivani Chatbot.  Based on the provided data about engineering college admissions, I can answer questions about cutoff scores for different departments and categories (Open, OBC, NT, SC, VJ, DT),  intake capacity, fees, and the entrance exam.  I can't provide information beyond what's included in this specific dataset.</div>
+                <style>
+                    .data-table {
+                        width: 100%;
+                        margin-top: 15px;
+                        border-collapse: collapse;
+                        font-size: 14px;
+                        background-color: white;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .data-table th {
+                        background-color: #007bff;
+                        color: white;
+                        padding: 10px;
+                        text-align: left;
+                        border: 1px solid #ddd;
+                        font-weight: bold;
+                    }
+
+                    .data-table td {
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        color: #333;
+                    }
+
+                    .data-table tr:nth-child(even) {
+                        background-color: #f1f1f1;
+                    }
+
+                    .data-table tr:nth-child(odd) {
+                        background-color: #ffffff;
+                    }
+
+                    .data-table tr:hover {
+                        background-color: #d0eaff;
+                    }
+
+                    .explanation {
+                        margin-bottom: 10px;
+                        color: #ffffff;
+                    }
+
+                    /* Sky Blue Background Below the Table */
+                    .table-container {
+                        padding: 20px;
+                        background: linear-gradient(to bottom, #ffffff, #87CEEB);
+                        border-radius: 10px;
+                        margin-top: 20px;
+                    }
+                </style>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>department_name</th>
+      <th>open_</th>
+      <th>cutoff</th>
+      <th>obc</th>
+      <th>ntd</th>
+      <th>ntb</th>
+      <th>ntc</th>
+      <th>sc</th>
+      <th>vj</th>
+      <th>dt</th>
+      <th>intake</th>
+      <th>collegefees</th>
+      <th>hostelfees</th>
+      <th>exam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Information Technology Engineering</td>
+      <td>87.25</td>
+      <td>87.25</td>
+      <td>86.37</td>
+      <td>86.05</td>
+      <td>85.15</td>
+      <td>84.51</td>
+      <td>73.37</td>
+      <td>74.46</td>
+      <td>74.46</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT-CET</td>
+    </tr>
+    <tr>
+      <td>Computer Science Engineering</td>
+      <td>91.01</td>
+      <td>91.01</td>
+      <td>89.95</td>
+      <td>89.95</td>
+      <td>77.79</td>
+      <td>87.54</td>
+      <td>81.00</td>
+      <td>85.25</td>
+      <td>85.25</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electronics and Computer Engineering</td>
+      <td>83.63</td>
+      <td>83.63</td>
+      <td>83.37</td>
+      <td>77.41</td>
+      <td>75.14</td>
+      <td>84.39</td>
+      <td>69.69</td>
+      <td>76.04</td>
+      <td>76.04</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Civil Engineering</td>
+      <td>50.26</td>
+      <td>50.26</td>
+      <td>46.16</td>
+      <td>43.50</td>
+      <td>26.77</td>
+      <td>32.88</td>
+      <td>20.92</td>
+      <td>35.62</td>
+      <td>35.62</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electrical Engineering</td>
+      <td>71.98</td>
+      <td>71.98</td>
+      <td>69.65</td>
+      <td>14.47</td>
+      <td>47.37</td>
+      <td>64.26</td>
+      <td>46.45</td>
+      <td>44.05</td>
+      <td>44.05</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechanical Engineering</td>
+      <td>66.81</td>
+      <td>66.81</td>
+      <td>59.92</td>
+      <td>55.29</td>
+      <td>47.34</td>
+      <td>18.44</td>
+      <td>39.78</td>
+      <td>32.36</td>
+      <td>32.36</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechatronics Engineering</td>
+      <td>77.29</td>
+      <td>77.29</td>
+      <td>73.42</td>
+      <td>76.61</td>
+      <td>58.04</td>
+      <td>66.81</td>
+      <td>65.32</td>
+      <td>47.34</td>
+      <td>47.34</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Structural Engineering</td>
+      <td>51.05</td>
+      <td>51.05</td>
+      <td>42.92</td>
+      <td>46.85</td>
+      <td>30.95</td>
+      <td>47.34</td>
+      <td>14.47</td>
+      <td>19.93</td>
+      <td>19.93</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 12:00:41
+who is hod of it ?,"Dr. M.A. Jawale mam, currently serving as the Head of the Department (HOD) of Information Technology, has now also been entrusted with the additional responsibility of overseeing the Computer Department.",2025-03-23 12:00:54
+what is the cutoff of it,"
+            <div class=""bot-response"">
+                <div class=""explanation"">Sanjivani Chatbot here.  The cutoff for Information Technology Engineering is 87.25.  This means a candidate needs a minimum score of 87.25 to be considered for admission to this department.</div>
+                <style>
+                    .data-table {
+                        width: 100%;
+                        margin-top: 15px;
+                        border-collapse: collapse;
+                        font-size: 14px;
+                        background-color: white;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .data-table th {
+                        background-color: #007bff;
+                        color: white;
+                        padding: 10px;
+                        text-align: left;
+                        border: 1px solid #ddd;
+                        font-weight: bold;
+                    }
+
+                    .data-table td {
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        color: #333;
+                    }
+
+                    .data-table tr:nth-child(even) {
+                        background-color: #f1f1f1;
+                    }
+
+                    .data-table tr:nth-child(odd) {
+                        background-color: #ffffff;
+                    }
+
+                    .data-table tr:hover {
+                        background-color: #d0eaff;
+                    }
+
+                    .explanation {
+                        margin-bottom: 10px;
+                        color: #ffffff;
+                    }
+
+                    /* Sky Blue Background Below the Table */
+                    .table-container {
+                        padding: 20px;
+                        background: linear-gradient(to bottom, #ffffff, #87CEEB);
+                        border-radius: 10px;
+                        margin-top: 20px;
+                    }
+                </style>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>department_name</th>
+      <th>open_</th>
+      <th>cutoff</th>
+      <th>obc</th>
+      <th>ntd</th>
+      <th>ntb</th>
+      <th>ntc</th>
+      <th>sc</th>
+      <th>vj</th>
+      <th>dt</th>
+      <th>intake</th>
+      <th>collegefees</th>
+      <th>hostelfees</th>
+      <th>exam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Information Technology Engineering</td>
+      <td>87.25</td>
+      <td>87.25</td>
+      <td>86.37</td>
+      <td>86.05</td>
+      <td>85.15</td>
+      <td>84.51</td>
+      <td>73.37</td>
+      <td>74.46</td>
+      <td>74.46</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT-CET</td>
+    </tr>
+    <tr>
+      <td>Computer Science Engineering</td>
+      <td>91.01</td>
+      <td>91.01</td>
+      <td>89.95</td>
+      <td>89.95</td>
+      <td>77.79</td>
+      <td>87.54</td>
+      <td>81.00</td>
+      <td>85.25</td>
+      <td>85.25</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electronics and Computer Engineering</td>
+      <td>83.63</td>
+      <td>83.63</td>
+      <td>83.37</td>
+      <td>77.41</td>
+      <td>75.14</td>
+      <td>84.39</td>
+      <td>69.69</td>
+      <td>76.04</td>
+      <td>76.04</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Civil Engineering</td>
+      <td>50.26</td>
+      <td>50.26</td>
+      <td>46.16</td>
+      <td>43.50</td>
+      <td>26.77</td>
+      <td>32.88</td>
+      <td>20.92</td>
+      <td>35.62</td>
+      <td>35.62</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electrical Engineering</td>
+      <td>71.98</td>
+      <td>71.98</td>
+      <td>69.65</td>
+      <td>14.47</td>
+      <td>47.37</td>
+      <td>64.26</td>
+      <td>46.45</td>
+      <td>44.05</td>
+      <td>44.05</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechanical Engineering</td>
+      <td>66.81</td>
+      <td>66.81</td>
+      <td>59.92</td>
+      <td>55.29</td>
+      <td>47.34</td>
+      <td>18.44</td>
+      <td>39.78</td>
+      <td>32.36</td>
+      <td>32.36</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechatronics Engineering</td>
+      <td>77.29</td>
+      <td>77.29</td>
+      <td>73.42</td>
+      <td>76.61</td>
+      <td>58.04</td>
+      <td>66.81</td>
+      <td>65.32</td>
+      <td>47.34</td>
+      <td>47.34</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Structural Engineering</td>
+      <td>51.05</td>
+      <td>51.05</td>
+      <td>42.92</td>
+      <td>46.85</td>
+      <td>30.95</td>
+      <td>47.34</td>
+      <td>14.47</td>
+      <td>19.93</td>
+      <td>19.93</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 12:01:14
+who is placed in deloitte,"
+            <div class=""bot-response"">
+                <div class=""explanation"">Sanjivani Chatbot here.
+
+Based on the placement information, several students were placed at Deloitte.  Roshan Jadhav, Soham Suryawanshi, Vaishnavi Navneet Joshi,  Pratik Jadhav, Atharva Puri, Sanskruti Jawale, Shruti Khandagale, Shraddha Jejurkar, and Saiprasad More were among those who secured placements with Deloitte.  Note that Saiprasad More's placement was an internship.</div>
+                <style>
+                    .data-table {
+                        width: 100%;
+                        margin-top: 15px;
+                        border-collapse: collapse;
+                        font-size: 14px;
+                        background-color: white;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .data-table th {
+                        background-color: #007bff;
+                        color: white;
+                        padding: 10px;
+                        text-align: left;
+                        border: 1px solid #ddd;
+                        font-weight: bold;
+                    }
+
+                    .data-table td {
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        color: #333;
+                    }
+
+                    .data-table tr:nth-child(even) {
+                        background-color: #f1f1f1;
+                    }
+
+                    .data-table tr:nth-child(odd) {
+                        background-color: #ffffff;
+                    }
+
+                    .data-table tr:hover {
+                        background-color: #d0eaff;
+                    }
+
+                    .explanation {
+                        margin-bottom: 10px;
+                        color: #ffffff;
+                    }
+
+                    /* Sky Blue Background Below the Table */
+                    .table-container {
+                        padding: 20px;
+                        background: linear-gradient(to bottom, #ffffff, #87CEEB);
+                        border-radius: 10px;
+                        margin-top: 20px;
+                    }
+                </style>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>id</th>
+      <th>Student_Name</th>
+      <th>Batch</th>
+      <th>Placement_Type</th>
+      <th>Name_Of_Company</th>
+      <th>department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Ketki Bhirud</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>BOSCH</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Varad Banale</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>BOSCH</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Raman Suryawanshi</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Rutuja Jape</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Shivani Magar</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Shubham S. Ghogare</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Akshada Goraksha</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Prajakta Wagh</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Madhuri Aher</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Pratik Patil</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Priyanka Gawali</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Shubham S. Ghogare</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Suyash Waghmare</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Soham Suryawanshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Hexaware</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Vaishnavi Turkane</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Hexaware</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Akshay Shirsat</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Dipak Pangavhane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Hrushikesh Bargal</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Mansi Lokhande</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Prajakta Wagh</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Sakshi Navale</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Pratik Cholke</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Komal Rakate</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Knorr Bremse</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KPIT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Himani Trivedi</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>KPIT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Akshay Shirsat</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KRYPT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KRYPT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>LTI</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Pratik Cholke</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>LTI</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Nikhil Nikale</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>MAN</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Mecre Tech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Mecre Tech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Ashwini Kale</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Ketki Bhirud</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>Parvej Shaikh</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Sakshi Dange</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Vaibhav Jagdhane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Rushikesh Mane</td>
+      <td>2023</td>
+      <td>oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Pawar Rutuja Vishnu</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>Raktate Komal Bhaginth</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>Nikhil Nikale</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Qualitykiosk Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>Kulthe Shubham</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Revature</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>Sayali Khandizod</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Revature</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>Kulthe Shubham</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Searce Inc</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>Mayuri Wakte</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>StackNexus</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>TCS</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>TCS</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>Jadhav Subodh Sanjay</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Thermofisher Scientific Ltd</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Thermofisher Scientific Ltd</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>Pritamkumar S. Jadhav</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Vervotech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>Pawar Yogesh Dattatray</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Virtusa</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>Shivani Magar</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Virtusa</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>Himani Trivedi</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Winjit Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Winjit Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>Arti Pagar</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>Girish Jadhav</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>Madhuri Aher</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>Mansi Lokhande</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>Prajakta Hon</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>Rutuja Bandu Phepale</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>Rutuja Jape</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>Sakshi Navale</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>Subodh Jadhav</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>Tejal Tupe</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>OffCamps</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>Vaishnavi Turkane</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>Kanawade Prasad Babasaheb</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Yash Technology</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>Abhinandan Radhakrushna Yelam</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>Saurabh Mohanrao Sonvane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Zensoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>Adhav Vaishnavi Ravindra</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>ABHALE OM JALINDER</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Twinsistech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>AGHAV SANKET TULSHIRAM</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>AGLAVE NISHA SUNIL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>AGRE VAISHNAVI DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Asian Heart Institute</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>AHER SAURABH SANTOSH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>ANSARI MOHAMMED ANAS MOMIN MOHAMMED AMIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>AWARI SHIVANJALI SHIVAJI</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>BANKAR VIKAS VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Godrej Infotech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>BARVE AKANKSHA SANTOSH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>BHAKARE SAIRAJ PRADIP</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>BHAND PRITI DILIP</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>BHANGARE NILESH BALASAHEB</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Numetry Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>BHATADE SHRIKANT VAIJNATH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Edikio Systems Integrators</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>BHOI SUREKHA JAYSING</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>BORDE ADARSH SUDHAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>CHAVAN YASH ASHOK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>DAHE KOMAL DAULATRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>DHOLE ADITYA NITIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Winjit Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>GHANGARE PRACHI SUNIL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>GIRME YASH ARVIND</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>GORDE SIDDHARTHA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>HALWAI YASH SANJEEV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>HARDE NILAM PRABHAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>ILHE SHRIKANT MACHHINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>JADHAV BHAKTI KIRAN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>JADHAV DHANANJAY DATTATRAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>JAGZAP PRATIK RATNAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>JISHAN SHAKIL SAYYAD</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Aress Software and Education Technologies pvt.Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>JOSHI PRANAV SHEKHAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>JOSHI RADHIKA RHUSHIKESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>JOSHI VINIT HARSHAD</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>KADAM VIVEK VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>KAJAL SHARMA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>KARNE PRASANNA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>KARODPATI KUSUMITA RAJESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>KEDARE ASHLESHA RATNAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>KEKAN SANSKRUTI KHUSHAL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>SONAWANE SHRADDHA DIPAK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>PARJANE PRANJAL BABASAHEB</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>SONAWANE GEETA DATTATRAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>JADHAV POOJA SANJEEV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>NAVGIRE SHRUTI DEVIDAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>GADE PRANAV VIKRAMADITYA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>KSHIRSAGAR TEJAS DHANANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>KULKARNI VASUDHA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Thinkbridge</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>LOKARE DINESH JAYANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>MHASE SWATI BAPU</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>MHASE VAISHNAVI SHIVAJI</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>MHASKE ASHWINI ASHOK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Numetry Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>MORE MAYUR MAHESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td>NAIKWADE VAISHNAVI SHAMRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td>NARKHEDE ISHIKA SACHIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>NAWALE SAMARTH RAJESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>NIMBHORKAR NINAD NITIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>PAGAR OM PRAKASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>PANDHARE HARSHALINI BALU</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Winjit Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>PANGAVHANE SANKET SHANKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>PATIL KRUSHNA DEEPAK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Webtech Developers Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>PATIL LOKESH KAILAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>PATIL PALASH RAVINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td>PAWAR DARSHANA AVINASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td>PAWAR MAYUR KAILAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>PAWAR PRADYUMNA DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td>PAWAR RUSHIKESH BHARAT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>156</td>
+      <td>PAWAR SHEKHAR DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Applied AI</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>PUND AJITA GIRISH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Deloitte</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>RUDRABHATE RUCHA UDAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>159</td>
+      <td>SABNE OM MANOJ</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>160</td>
+      <td>SADAPHAL CHINMAY SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>161</td>
+      <td>SAKHARE SHIVPRASAD CHANDRAKANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Deloitte</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>162</td>
+      <td>SALAVE VAIBHAV NAVNATH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>SALBANDE POOJA SITARAM</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>SALVE TEJAS SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>165</td>
+      <td>SATALKAR URMILA RAJENDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>SHELKE ALISH NAMDEO</td>
+      <td>2024</td>
+      <td>on</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td>SHINDE AKSHAY MADHAVRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>168</td>
+      <td>SONAR PRATIK PRAKASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Karmacts  Systms</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>169</td>
+      <td>SURADE SHIVAM SHYAMKANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>170</td>
+      <td>TAMBE PRATIK KESHAV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Godrej Infotech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td>TANUJA RAMESH GADHE</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>HSBC</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>172</td>
+      <td>WAGH VEDIKA RAVINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>UNWANE PRASHIK SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td>RASKAR DIPALI VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Asian Heart Institute</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>175</td>
+      <td>THORAT RANI SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>176</td>
+      <td>PAWAR VAISHNAVI BHIMASHANKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>177</td>
+      <td>MATHA AYUSH NILESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>Tushar Patekar</td>
+      <td>2025</td>
+      <td>Oncampus</td>
+      <td>RsquareSoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td>Jalindranath Kangane</td>
+      <td>2025</td>
+      <td>OnCampus\r\n</td>
+      <td>RsquareSoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>182</td>
+      <td>Pratik Jadhav</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>183</td>
+      <td>Atharva Puri</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>Sanskruti Jawale</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>Shruti Khandagale</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>Shraddha Jejurkar</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>187</td>
+      <td>shrusti Hiray</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Benchmark IT solutions</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td>Chetan Sapkal</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Benchmark IT solutions</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td>Saiprasad More</td>
+      <td>2025</td>
+      <td>Internship</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 12:01:25
+who are u,"
+            <div class=""bot-response"">
+                <div class=""explanation"">I am Sanjivani Chatbot.  I processed the provided data about engineering department admission requirements, including cutoff scores for various categories (Open, OBC, NT, SC, VJ, DT) and other details like intake, fees, and the entrance exam.  I can answer your questions based on this information.  Ask me anything!</div>
+                <style>
+                    .data-table {
+                        width: 100%;
+                        margin-top: 15px;
+                        border-collapse: collapse;
+                        font-size: 14px;
+                        background-color: white;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .data-table th {
+                        background-color: #007bff;
+                        color: white;
+                        padding: 10px;
+                        text-align: left;
+                        border: 1px solid #ddd;
+                        font-weight: bold;
+                    }
+
+                    .data-table td {
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        color: #333;
+                    }
+
+                    .data-table tr:nth-child(even) {
+                        background-color: #f1f1f1;
+                    }
+
+                    .data-table tr:nth-child(odd) {
+                        background-color: #ffffff;
+                    }
+
+                    .data-table tr:hover {
+                        background-color: #d0eaff;
+                    }
+
+                    .explanation {
+                        margin-bottom: 10px;
+                        color: #ffffff;
+                    }
+
+                    /* Sky Blue Background Below the Table */
+                    .table-container {
+                        padding: 20px;
+                        background: linear-gradient(to bottom, #ffffff, #87CEEB);
+                        border-radius: 10px;
+                        margin-top: 20px;
+                    }
+                </style>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>department_name</th>
+      <th>open_</th>
+      <th>cutoff</th>
+      <th>obc</th>
+      <th>ntd</th>
+      <th>ntb</th>
+      <th>ntc</th>
+      <th>sc</th>
+      <th>vj</th>
+      <th>dt</th>
+      <th>intake</th>
+      <th>collegefees</th>
+      <th>hostelfees</th>
+      <th>exam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Information Technology Engineering</td>
+      <td>87.25</td>
+      <td>87.25</td>
+      <td>86.37</td>
+      <td>86.05</td>
+      <td>85.15</td>
+      <td>84.51</td>
+      <td>73.37</td>
+      <td>74.46</td>
+      <td>74.46</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT-CET</td>
+    </tr>
+    <tr>
+      <td>Computer Science Engineering</td>
+      <td>91.01</td>
+      <td>91.01</td>
+      <td>89.95</td>
+      <td>89.95</td>
+      <td>77.79</td>
+      <td>87.54</td>
+      <td>81.00</td>
+      <td>85.25</td>
+      <td>85.25</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electronics and Computer Engineering</td>
+      <td>83.63</td>
+      <td>83.63</td>
+      <td>83.37</td>
+      <td>77.41</td>
+      <td>75.14</td>
+      <td>84.39</td>
+      <td>69.69</td>
+      <td>76.04</td>
+      <td>76.04</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Civil Engineering</td>
+      <td>50.26</td>
+      <td>50.26</td>
+      <td>46.16</td>
+      <td>43.50</td>
+      <td>26.77</td>
+      <td>32.88</td>
+      <td>20.92</td>
+      <td>35.62</td>
+      <td>35.62</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electrical Engineering</td>
+      <td>71.98</td>
+      <td>71.98</td>
+      <td>69.65</td>
+      <td>14.47</td>
+      <td>47.37</td>
+      <td>64.26</td>
+      <td>46.45</td>
+      <td>44.05</td>
+      <td>44.05</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechanical Engineering</td>
+      <td>66.81</td>
+      <td>66.81</td>
+      <td>59.92</td>
+      <td>55.29</td>
+      <td>47.34</td>
+      <td>18.44</td>
+      <td>39.78</td>
+      <td>32.36</td>
+      <td>32.36</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechatronics Engineering</td>
+      <td>77.29</td>
+      <td>77.29</td>
+      <td>73.42</td>
+      <td>76.61</td>
+      <td>58.04</td>
+      <td>66.81</td>
+      <td>65.32</td>
+      <td>47.34</td>
+      <td>47.34</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Structural Engineering</td>
+      <td>51.05</td>
+      <td>51.05</td>
+      <td>42.92</td>
+      <td>46.85</td>
+      <td>30.95</td>
+      <td>47.34</td>
+      <td>14.47</td>
+      <td>19.93</td>
+      <td>19.93</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 12:02:04
+who is placed in deloitte ?,"
+            <div class=""bot-response"">
+                <div class=""explanation"">The following students were placed in Deloitte:
+
+* Roshan Jadhav (Off-campus and On-campus placements)
+* Soham Suryawanshi (On-campus placement)
+* Vaishnavi Navneet Joshi (On-campus placement)
+* Pratik Jadhav (On-campus placement)
+* Atharva Puri (On-campus placement)
+* Sanskruti Jawale (On-campus placement)
+* Shruti Khandagale (On-campus placement)
+* Shraddha Jejurkar (On-campus placement)
+* Saiprasad More (Internship)
+
+
+Note that Roshan Jadhav has multiple placements listed, including one off-campus placement.  Also, the placement type is inconsistent in the data (e.g., ""Off Campus"", ""Offcampus"", ""Off Campus"").</div>
+                <style>
+                    .data-table {
+                        width: 100%;
+                        margin-top: 15px;
+                        border-collapse: collapse;
+                        font-size: 14px;
+                        background-color: white;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .data-table th {
+                        background-color: #007bff;
+                        color: white;
+                        padding: 10px;
+                        text-align: left;
+                        border: 1px solid #ddd;
+                        font-weight: bold;
+                    }
+
+                    .data-table td {
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        color: #333;
+                    }
+
+                    .data-table tr:nth-child(even) {
+                        background-color: #f1f1f1;
+                    }
+
+                    .data-table tr:nth-child(odd) {
+                        background-color: #ffffff;
+                    }
+
+                    .data-table tr:hover {
+                        background-color: #d0eaff;
+                    }
+
+                    .explanation {
+                        margin-bottom: 10px;
+                        color: #ffffff;
+                    }
+
+                    /* Sky Blue Background Below the Table */
+                    .table-container {
+                        padding: 20px;
+                        background: linear-gradient(to bottom, #ffffff, #87CEEB);
+                        border-radius: 10px;
+                        margin-top: 20px;
+                    }
+                </style>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>id</th>
+      <th>Student_Name</th>
+      <th>Batch</th>
+      <th>Placement_Type</th>
+      <th>Name_Of_Company</th>
+      <th>department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Ketki Bhirud</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>BOSCH</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Varad Banale</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>BOSCH</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Raman Suryawanshi</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Rutuja Jape</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Shivani Magar</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Shubham S. Ghogare</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Akshada Goraksha</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Prajakta Wagh</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Madhuri Aher</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Pratik Patil</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Priyanka Gawali</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Shubham S. Ghogare</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Suyash Waghmare</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Soham Suryawanshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Hexaware</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Vaishnavi Turkane</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Hexaware</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Akshay Shirsat</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Dipak Pangavhane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Hrushikesh Bargal</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Mansi Lokhande</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Prajakta Wagh</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Sakshi Navale</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Pratik Cholke</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Komal Rakate</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Knorr Bremse</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KPIT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Himani Trivedi</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>KPIT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Akshay Shirsat</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KRYPT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KRYPT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>LTI</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Pratik Cholke</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>LTI</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Nikhil Nikale</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>MAN</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Mecre Tech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Mecre Tech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Ashwini Kale</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Ketki Bhirud</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>Parvej Shaikh</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Sakshi Dange</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Vaibhav Jagdhane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Rushikesh Mane</td>
+      <td>2023</td>
+      <td>oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Pawar Rutuja Vishnu</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>Raktate Komal Bhaginth</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>Nikhil Nikale</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Qualitykiosk Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>Kulthe Shubham</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Revature</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>Sayali Khandizod</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Revature</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>Kulthe Shubham</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Searce Inc</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>Mayuri Wakte</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>StackNexus</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>TCS</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>TCS</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>Jadhav Subodh Sanjay</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Thermofisher Scientific Ltd</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Thermofisher Scientific Ltd</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>Pritamkumar S. Jadhav</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Vervotech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>Pawar Yogesh Dattatray</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Virtusa</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>Shivani Magar</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Virtusa</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>Himani Trivedi</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Winjit Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Winjit Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>Arti Pagar</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>Girish Jadhav</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>Madhuri Aher</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>Mansi Lokhande</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>Prajakta Hon</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>Rutuja Bandu Phepale</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>Rutuja Jape</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>Sakshi Navale</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>Subodh Jadhav</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>Tejal Tupe</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>OffCamps</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>Vaishnavi Turkane</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>Kanawade Prasad Babasaheb</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Yash Technology</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>Abhinandan Radhakrushna Yelam</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>Saurabh Mohanrao Sonvane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Zensoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>Adhav Vaishnavi Ravindra</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>ABHALE OM JALINDER</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Twinsistech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>AGHAV SANKET TULSHIRAM</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>AGLAVE NISHA SUNIL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>AGRE VAISHNAVI DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Asian Heart Institute</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>AHER SAURABH SANTOSH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>ANSARI MOHAMMED ANAS MOMIN MOHAMMED AMIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>AWARI SHIVANJALI SHIVAJI</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>BANKAR VIKAS VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Godrej Infotech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>BARVE AKANKSHA SANTOSH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>BHAKARE SAIRAJ PRADIP</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>BHAND PRITI DILIP</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>BHANGARE NILESH BALASAHEB</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Numetry Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>BHATADE SHRIKANT VAIJNATH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Edikio Systems Integrators</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>BHOI SUREKHA JAYSING</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>BORDE ADARSH SUDHAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>CHAVAN YASH ASHOK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>DAHE KOMAL DAULATRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>DHOLE ADITYA NITIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Winjit Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>GHANGARE PRACHI SUNIL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>GIRME YASH ARVIND</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>GORDE SIDDHARTHA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>HALWAI YASH SANJEEV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>HARDE NILAM PRABHAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>ILHE SHRIKANT MACHHINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>JADHAV BHAKTI KIRAN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>JADHAV DHANANJAY DATTATRAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>JAGZAP PRATIK RATNAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>JISHAN SHAKIL SAYYAD</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Aress Software and Education Technologies pvt.Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>JOSHI PRANAV SHEKHAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>JOSHI RADHIKA RHUSHIKESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>JOSHI VINIT HARSHAD</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>KADAM VIVEK VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>KAJAL SHARMA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>KARNE PRASANNA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>KARODPATI KUSUMITA RAJESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>KEDARE ASHLESHA RATNAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>KEKAN SANSKRUTI KHUSHAL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>SONAWANE SHRADDHA DIPAK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>PARJANE PRANJAL BABASAHEB</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>SONAWANE GEETA DATTATRAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>JADHAV POOJA SANJEEV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>NAVGIRE SHRUTI DEVIDAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>GADE PRANAV VIKRAMADITYA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>KSHIRSAGAR TEJAS DHANANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>KULKARNI VASUDHA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Thinkbridge</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>LOKARE DINESH JAYANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>MHASE SWATI BAPU</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>MHASE VAISHNAVI SHIVAJI</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>MHASKE ASHWINI ASHOK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Numetry Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>MORE MAYUR MAHESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td>NAIKWADE VAISHNAVI SHAMRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td>NARKHEDE ISHIKA SACHIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>NAWALE SAMARTH RAJESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>NIMBHORKAR NINAD NITIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>PAGAR OM PRAKASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>PANDHARE HARSHALINI BALU</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Winjit Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>PANGAVHANE SANKET SHANKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>PATIL KRUSHNA DEEPAK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Webtech Developers Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>PATIL LOKESH KAILAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>PATIL PALASH RAVINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td>PAWAR DARSHANA AVINASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td>PAWAR MAYUR KAILAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>PAWAR PRADYUMNA DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td>PAWAR RUSHIKESH BHARAT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>156</td>
+      <td>PAWAR SHEKHAR DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Applied AI</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>PUND AJITA GIRISH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Deloitte</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>RUDRABHATE RUCHA UDAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>159</td>
+      <td>SABNE OM MANOJ</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>160</td>
+      <td>SADAPHAL CHINMAY SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>161</td>
+      <td>SAKHARE SHIVPRASAD CHANDRAKANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Deloitte</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>162</td>
+      <td>SALAVE VAIBHAV NAVNATH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>SALBANDE POOJA SITARAM</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>SALVE TEJAS SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>165</td>
+      <td>SATALKAR URMILA RAJENDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>SHELKE ALISH NAMDEO</td>
+      <td>2024</td>
+      <td>on</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td>SHINDE AKSHAY MADHAVRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>168</td>
+      <td>SONAR PRATIK PRAKASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Karmacts  Systms</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>169</td>
+      <td>SURADE SHIVAM SHYAMKANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>170</td>
+      <td>TAMBE PRATIK KESHAV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Godrej Infotech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td>TANUJA RAMESH GADHE</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>HSBC</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>172</td>
+      <td>WAGH VEDIKA RAVINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>UNWANE PRASHIK SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td>RASKAR DIPALI VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Asian Heart Institute</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>175</td>
+      <td>THORAT RANI SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>176</td>
+      <td>PAWAR VAISHNAVI BHIMASHANKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>177</td>
+      <td>MATHA AYUSH NILESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>Tushar Patekar</td>
+      <td>2025</td>
+      <td>Oncampus</td>
+      <td>RsquareSoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td>Jalindranath Kangane</td>
+      <td>2025</td>
+      <td>OnCampus\r\n</td>
+      <td>RsquareSoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>182</td>
+      <td>Pratik Jadhav</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>183</td>
+      <td>Atharva Puri</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>Sanskruti Jawale</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>Shruti Khandagale</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>Shraddha Jejurkar</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>187</td>
+      <td>shrusti Hiray</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Benchmark IT solutions</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td>Chetan Sapkal</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Benchmark IT solutions</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td>Saiprasad More</td>
+      <td>2025</td>
+      <td>Internship</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 12:02:19
+how many student placed in benchmark it solutions ?,"
+            <div class=""bot-response"">
+                <div class=""explanation"">Based on the provided placement data,  5 students were placed in Benchmark IT Solutions.  This count includes placements from both the Information Technology and Computer Engineering departments.</div>
+                <style>
+                    .data-table {
+                        width: 100%;
+                        margin-top: 15px;
+                        border-collapse: collapse;
+                        font-size: 14px;
+                        background-color: white;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .data-table th {
+                        background-color: #007bff;
+                        color: white;
+                        padding: 10px;
+                        text-align: left;
+                        border: 1px solid #ddd;
+                        font-weight: bold;
+                    }
+
+                    .data-table td {
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                        color: #333;
+                    }
+
+                    .data-table tr:nth-child(even) {
+                        background-color: #f1f1f1;
+                    }
+
+                    .data-table tr:nth-child(odd) {
+                        background-color: #ffffff;
+                    }
+
+                    .data-table tr:hover {
+                        background-color: #d0eaff;
+                    }
+
+                    .explanation {
+                        margin-bottom: 10px;
+                        color: #ffffff;
+                    }
+
+                    /* Sky Blue Background Below the Table */
+                    .table-container {
+                        padding: 20px;
+                        background: linear-gradient(to bottom, #ffffff, #87CEEB);
+                        border-radius: 10px;
+                        margin-top: 20px;
+                    }
+                </style>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>id</th>
+      <th>Student_Name</th>
+      <th>Batch</th>
+      <th>Placement_Type</th>
+      <th>Name_Of_Company</th>
+      <th>department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Ketki Bhirud</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>BOSCH</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Varad Banale</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>BOSCH</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Raman Suryawanshi</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Rutuja Jape</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Shivani Magar</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Shubham S. Ghogare</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Akshada Goraksha</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Prajakta Wagh</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Madhuri Aher</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Pratik Patil</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Priyanka Gawali</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Shubham S. Ghogare</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Suyash Waghmare</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Soham Suryawanshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Hexaware</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Vaishnavi Turkane</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Hexaware</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Akshay Shirsat</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Dipak Pangavhane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Hrushikesh Bargal</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Mansi Lokhande</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Prajakta Wagh</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Sakshi Navale</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Pratik Cholke</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Komal Rakate</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Knorr Bremse</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KPIT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Himani Trivedi</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>KPIT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Akshay Shirsat</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KRYPT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KRYPT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>LTI</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Pratik Cholke</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>LTI</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Nikhil Nikale</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>MAN</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Mecre Tech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Mecre Tech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Ashwini Kale</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Ketki Bhirud</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>Parvej Shaikh</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Sakshi Dange</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Vaibhav Jagdhane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Rushikesh Mane</td>
+      <td>2023</td>
+      <td>oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Pawar Rutuja Vishnu</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>Raktate Komal Bhaginth</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>Nikhil Nikale</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Qualitykiosk Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>Kulthe Shubham</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Revature</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>Sayali Khandizod</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Revature</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>Kulthe Shubham</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Searce Inc</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>Mayuri Wakte</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>StackNexus</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>TCS</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>TCS</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>Jadhav Subodh Sanjay</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Thermofisher Scientific Ltd</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Thermofisher Scientific Ltd</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>Pritamkumar S. Jadhav</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Vervotech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>Pawar Yogesh Dattatray</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Virtusa</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>Shivani Magar</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Virtusa</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>Himani Trivedi</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Winjit Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Winjit Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>Arti Pagar</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>Girish Jadhav</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>Madhuri Aher</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>Mansi Lokhande</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>Prajakta Hon</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>Rutuja Bandu Phepale</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>Rutuja Jape</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>Sakshi Navale</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>Subodh Jadhav</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>Tejal Tupe</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>OffCamps</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>Vaishnavi Turkane</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>Kanawade Prasad Babasaheb</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Yash Technology</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>Abhinandan Radhakrushna Yelam</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>Saurabh Mohanrao Sonvane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Zensoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>Adhav Vaishnavi Ravindra</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>ABHALE OM JALINDER</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Twinsistech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>AGHAV SANKET TULSHIRAM</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>AGLAVE NISHA SUNIL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>AGRE VAISHNAVI DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Asian Heart Institute</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>AHER SAURABH SANTOSH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>ANSARI MOHAMMED ANAS MOMIN MOHAMMED AMIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>AWARI SHIVANJALI SHIVAJI</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>BANKAR VIKAS VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Godrej Infotech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>BARVE AKANKSHA SANTOSH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>BHAKARE SAIRAJ PRADIP</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>BHAND PRITI DILIP</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>BHANGARE NILESH BALASAHEB</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Numetry Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>BHATADE SHRIKANT VAIJNATH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Edikio Systems Integrators</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>BHOI SUREKHA JAYSING</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>BORDE ADARSH SUDHAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>CHAVAN YASH ASHOK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>DAHE KOMAL DAULATRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>DHOLE ADITYA NITIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Winjit Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>GHANGARE PRACHI SUNIL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>GIRME YASH ARVIND</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>GORDE SIDDHARTHA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>HALWAI YASH SANJEEV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>HARDE NILAM PRABHAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>ILHE SHRIKANT MACHHINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>JADHAV BHAKTI KIRAN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>JADHAV DHANANJAY DATTATRAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>JAGZAP PRATIK RATNAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>JISHAN SHAKIL SAYYAD</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Aress Software and Education Technologies pvt.Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>JOSHI PRANAV SHEKHAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>JOSHI RADHIKA RHUSHIKESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>JOSHI VINIT HARSHAD</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>KADAM VIVEK VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>KAJAL SHARMA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>KARNE PRASANNA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>KARODPATI KUSUMITA RAJESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>KEDARE ASHLESHA RATNAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>KEKAN SANSKRUTI KHUSHAL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>SONAWANE SHRADDHA DIPAK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>PARJANE PRANJAL BABASAHEB</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>SONAWANE GEETA DATTATRAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>JADHAV POOJA SANJEEV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>NAVGIRE SHRUTI DEVIDAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>GADE PRANAV VIKRAMADITYA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>KSHIRSAGAR TEJAS DHANANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>KULKARNI VASUDHA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Thinkbridge</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>LOKARE DINESH JAYANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>MHASE SWATI BAPU</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>MHASE VAISHNAVI SHIVAJI</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>MHASKE ASHWINI ASHOK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Numetry Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>MORE MAYUR MAHESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td>NAIKWADE VAISHNAVI SHAMRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td>NARKHEDE ISHIKA SACHIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>NAWALE SAMARTH RAJESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>NIMBHORKAR NINAD NITIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>PAGAR OM PRAKASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>PANDHARE HARSHALINI BALU</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Winjit Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>PANGAVHANE SANKET SHANKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>PATIL KRUSHNA DEEPAK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Webtech Developers Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>PATIL LOKESH KAILAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>PATIL PALASH RAVINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td>PAWAR DARSHANA AVINASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td>PAWAR MAYUR KAILAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>PAWAR PRADYUMNA DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td>PAWAR RUSHIKESH BHARAT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>156</td>
+      <td>PAWAR SHEKHAR DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Applied AI</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>PUND AJITA GIRISH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Deloitte</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>RUDRABHATE RUCHA UDAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>159</td>
+      <td>SABNE OM MANOJ</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>160</td>
+      <td>SADAPHAL CHINMAY SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>161</td>
+      <td>SAKHARE SHIVPRASAD CHANDRAKANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Deloitte</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>162</td>
+      <td>SALAVE VAIBHAV NAVNATH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>SALBANDE POOJA SITARAM</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>SALVE TEJAS SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>165</td>
+      <td>SATALKAR URMILA RAJENDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>SHELKE ALISH NAMDEO</td>
+      <td>2024</td>
+      <td>on</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td>SHINDE AKSHAY MADHAVRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>168</td>
+      <td>SONAR PRATIK PRAKASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Karmacts  Systms</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>169</td>
+      <td>SURADE SHIVAM SHYAMKANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>170</td>
+      <td>TAMBE PRATIK KESHAV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Godrej Infotech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td>TANUJA RAMESH GADHE</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>HSBC</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>172</td>
+      <td>WAGH VEDIKA RAVINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>UNWANE PRASHIK SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td>RASKAR DIPALI VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Asian Heart Institute</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>175</td>
+      <td>THORAT RANI SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>176</td>
+      <td>PAWAR VAISHNAVI BHIMASHANKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>177</td>
+      <td>MATHA AYUSH NILESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>Tushar Patekar</td>
+      <td>2025</td>
+      <td>Oncampus</td>
+      <td>RsquareSoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td>Jalindranath Kangane</td>
+      <td>2025</td>
+      <td>OnCampus\r\n</td>
+      <td>RsquareSoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>182</td>
+      <td>Pratik Jadhav</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>183</td>
+      <td>Atharva Puri</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>Sanskruti Jawale</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>Shruti Khandagale</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>Shraddha Jejurkar</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>187</td>
+      <td>shrusti Hiray</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Benchmark IT solutions</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td>Chetan Sapkal</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Benchmark IT solutions</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td>Saiprasad More</td>
+      <td>2025</td>
+      <td>Internship</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 12:03:04
+who is hod of civil ?,My purpose is to assist you,2025-03-23 12:04:30
+hi,"
+            <link rel=""stylesheet"" type=""text/css"" href=""/static/table.css"">
+            <div class=""bot-response"">
+                <div class=""explanation"">Okay, I'm ready for your query.  I'm Sanjivani Chatbot.</div>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>department_name</th>
+      <th>open_</th>
+      <th>cutoff</th>
+      <th>obc</th>
+      <th>ntd</th>
+      <th>ntb</th>
+      <th>ntc</th>
+      <th>sc</th>
+      <th>vj</th>
+      <th>dt</th>
+      <th>intake</th>
+      <th>collegefees</th>
+      <th>hostelfees</th>
+      <th>exam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Information Technology Engineering</td>
+      <td>87.25</td>
+      <td>87.25</td>
+      <td>86.37</td>
+      <td>86.05</td>
+      <td>85.15</td>
+      <td>84.51</td>
+      <td>73.37</td>
+      <td>74.46</td>
+      <td>74.46</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT-CET</td>
+    </tr>
+    <tr>
+      <td>Computer Science Engineering</td>
+      <td>91.01</td>
+      <td>91.01</td>
+      <td>89.95</td>
+      <td>89.95</td>
+      <td>77.79</td>
+      <td>87.54</td>
+      <td>81.00</td>
+      <td>85.25</td>
+      <td>85.25</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electronics and Computer Engineering</td>
+      <td>83.63</td>
+      <td>83.63</td>
+      <td>83.37</td>
+      <td>77.41</td>
+      <td>75.14</td>
+      <td>84.39</td>
+      <td>69.69</td>
+      <td>76.04</td>
+      <td>76.04</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Civil Engineering</td>
+      <td>50.26</td>
+      <td>50.26</td>
+      <td>46.16</td>
+      <td>43.50</td>
+      <td>26.77</td>
+      <td>32.88</td>
+      <td>20.92</td>
+      <td>35.62</td>
+      <td>35.62</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electrical Engineering</td>
+      <td>71.98</td>
+      <td>71.98</td>
+      <td>69.65</td>
+      <td>14.47</td>
+      <td>47.37</td>
+      <td>64.26</td>
+      <td>46.45</td>
+      <td>44.05</td>
+      <td>44.05</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechanical Engineering</td>
+      <td>66.81</td>
+      <td>66.81</td>
+      <td>59.92</td>
+      <td>55.29</td>
+      <td>47.34</td>
+      <td>18.44</td>
+      <td>39.78</td>
+      <td>32.36</td>
+      <td>32.36</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechatronics Engineering</td>
+      <td>77.29</td>
+      <td>77.29</td>
+      <td>73.42</td>
+      <td>76.61</td>
+      <td>58.04</td>
+      <td>66.81</td>
+      <td>65.32</td>
+      <td>47.34</td>
+      <td>47.34</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Structural Engineering</td>
+      <td>51.05</td>
+      <td>51.05</td>
+      <td>42.92</td>
+      <td>46.85</td>
+      <td>30.95</td>
+      <td>47.34</td>
+      <td>14.47</td>
+      <td>19.93</td>
+      <td>19.93</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 12:07:56
+hi,"
+            <link rel=""stylesheet"" type=""text/css"" href=""/static/table.css"">
+            <div class=""bot-response"">
+                <div class=""explanation"">Okay, I'm ready for your query.  I'm Sanjivani Chatbot.</div>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>department_name</th>
+      <th>open_</th>
+      <th>cutoff</th>
+      <th>obc</th>
+      <th>ntd</th>
+      <th>ntb</th>
+      <th>ntc</th>
+      <th>sc</th>
+      <th>vj</th>
+      <th>dt</th>
+      <th>intake</th>
+      <th>collegefees</th>
+      <th>hostelfees</th>
+      <th>exam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Information Technology Engineering</td>
+      <td>87.25</td>
+      <td>87.25</td>
+      <td>86.37</td>
+      <td>86.05</td>
+      <td>85.15</td>
+      <td>84.51</td>
+      <td>73.37</td>
+      <td>74.46</td>
+      <td>74.46</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT-CET</td>
+    </tr>
+    <tr>
+      <td>Computer Science Engineering</td>
+      <td>91.01</td>
+      <td>91.01</td>
+      <td>89.95</td>
+      <td>89.95</td>
+      <td>77.79</td>
+      <td>87.54</td>
+      <td>81.00</td>
+      <td>85.25</td>
+      <td>85.25</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electronics and Computer Engineering</td>
+      <td>83.63</td>
+      <td>83.63</td>
+      <td>83.37</td>
+      <td>77.41</td>
+      <td>75.14</td>
+      <td>84.39</td>
+      <td>69.69</td>
+      <td>76.04</td>
+      <td>76.04</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Civil Engineering</td>
+      <td>50.26</td>
+      <td>50.26</td>
+      <td>46.16</td>
+      <td>43.50</td>
+      <td>26.77</td>
+      <td>32.88</td>
+      <td>20.92</td>
+      <td>35.62</td>
+      <td>35.62</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electrical Engineering</td>
+      <td>71.98</td>
+      <td>71.98</td>
+      <td>69.65</td>
+      <td>14.47</td>
+      <td>47.37</td>
+      <td>64.26</td>
+      <td>46.45</td>
+      <td>44.05</td>
+      <td>44.05</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechanical Engineering</td>
+      <td>66.81</td>
+      <td>66.81</td>
+      <td>59.92</td>
+      <td>55.29</td>
+      <td>47.34</td>
+      <td>18.44</td>
+      <td>39.78</td>
+      <td>32.36</td>
+      <td>32.36</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechatronics Engineering</td>
+      <td>77.29</td>
+      <td>77.29</td>
+      <td>73.42</td>
+      <td>76.61</td>
+      <td>58.04</td>
+      <td>66.81</td>
+      <td>65.32</td>
+      <td>47.34</td>
+      <td>47.34</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Structural Engineering</td>
+      <td>51.05</td>
+      <td>51.05</td>
+      <td>42.92</td>
+      <td>46.85</td>
+      <td>30.95</td>
+      <td>47.34</td>
+      <td>14.47</td>
+      <td>19.93</td>
+      <td>19.93</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 12:07:59
+who is hod of it department,"Dr. M.A. Jawale mam, currently serving as the Head of the Department (HOD) of Information Technology, has now also been entrusted with the additional responsibility of overseeing the Computer Department.",2025-03-23 12:08:20
+who are placed in deloitte?,"
+            <link rel=""stylesheet"" type=""text/css"" href=""/static/table.css"">
+            <div class=""bot-response"">
+                <div class=""explanation"">The following students were placed at Deloitte:
+
+* Roshan Jadhav
+* Soham Suryawanshi
+* Vaishnavi Navneet Joshi
+* Pratik Jadhav
+* Atharva Puri
+* Sanskruti Jawale
+* Shruti Khandagale
+* Shraddha Jejurkar
+* Saiprasad More (Internship)</div>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>id</th>
+      <th>Student_Name</th>
+      <th>Batch</th>
+      <th>Placement_Type</th>
+      <th>Name_Of_Company</th>
+      <th>department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Accenture</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Ketki Bhirud</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>BOSCH</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Varad Banale</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>BOSCH</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Raman Suryawanshi</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Rutuja Jape</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Shivani Magar</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Shubham S. Ghogare</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Akshada Goraksha</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Prajakta Wagh</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Capgemini</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Madhuri Aher</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Pratik Patil</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Priyanka Gawali</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Shubham S. Ghogare</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Suyash Waghmare</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Celebal Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Soham Suryawanshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Hexaware</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Vaishnavi Turkane</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Hexaware</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Akshay Shirsat</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Dipak Pangavhane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Hrushikesh Bargal</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Mansi Lokhande</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Prajakta Wagh</td>
+      <td>2023</td>
+      <td>On Campus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Sakshi Navale</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Pratik Cholke</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Infosys</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Komal Rakate</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Knorr Bremse</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KPIT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Himani Trivedi</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>KPIT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Akshay Shirsat</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KRYPT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>KRYPT</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>LTI</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Pratik Cholke</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>LTI</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Nikhil Nikale</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>MAN</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Mecre Tech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Mecre Tech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Ashwini Kale</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Dnyaneshwari Chaudhari</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Ketki Bhirud</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>Parvej Shaikh</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Sakshi Dange</td>
+      <td>2023</td>
+      <td>On campus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Vaibhav Jagdhane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Rushikesh Mane</td>
+      <td>2023</td>
+      <td>oncampus</td>
+      <td>Persistent</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Pawar Rutuja Vishnu</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>Raktate Komal Bhaginth</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Qspider</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>Nikhil Nikale</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Qualitykiosk Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>Kulthe Shubham</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Revature</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>Sayali Khandizod</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Revature</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>Kulthe Shubham</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Searce Inc</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>Mayuri Wakte</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>StackNexus</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>TCS</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>TCS</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>Jadhav Subodh Sanjay</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Thermofisher Scientific Ltd</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Thermofisher Scientific Ltd</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>Pritamkumar S. Jadhav</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Vervotech</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>Pawar Yogesh Dattatray</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Virtusa</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>Shivani Magar</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Virtusa</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>Himani Trivedi</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Winjit Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Winjit Technologies</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>Arti Pagar</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>Diksha Sonawane</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>Girish Jadhav</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>Madhuri Aher</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>Mansi Lokhande</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>Payal Patel</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>Prajakta Hon</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>Roshan Jadhav</td>
+      <td>2023</td>
+      <td>Off Campus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>Rutuja Bandu Phepale</td>
+      <td>2023</td>
+      <td>Offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>Rutuja Jape</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>Sakshi Navale</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>Sangale Poonam Dilip</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>Subodh Jadhav</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>Tejal Tupe</td>
+      <td>2023</td>
+      <td>OffCampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>Vaishnavi Navneet Joshi</td>
+      <td>2023</td>
+      <td>OffCamps</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>Vaishnavi Turkane</td>
+      <td>2023</td>
+      <td>offcampus</td>
+      <td>Wipro</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>Kanawade Prasad Babasaheb</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Yash Technology</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>Abhinandan Radhakrushna Yelam</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>Altaf Mohmmadrafik Shaikh</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>Saurabh Mohanrao Sonvane</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensar</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>Dushyant Jadhav</td>
+      <td>2023</td>
+      <td>Oncampus</td>
+      <td>Zensoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>Adhav Vaishnavi Ravindra</td>
+      <td>2023</td>
+      <td>on campus</td>
+      <td>Zensoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>ABHALE OM JALINDER</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Twinsistech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>AGHAV SANKET TULSHIRAM</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>AGLAVE NISHA SUNIL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>AGRE VAISHNAVI DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Asian Heart Institute</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>AHER SAURABH SANTOSH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>ANSARI MOHAMMED ANAS MOMIN MOHAMMED AMIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>AWARI SHIVANJALI SHIVAJI</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>BANKAR VIKAS VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Godrej Infotech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>BARVE AKANKSHA SANTOSH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>BHAKARE SAIRAJ PRADIP</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>BHAND PRITI DILIP</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>BHANGARE NILESH BALASAHEB</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Numetry Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>BHATADE SHRIKANT VAIJNATH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Edikio Systems Integrators</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>BHOI SUREKHA JAYSING</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>BORDE ADARSH SUDHAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>107</td>
+      <td>CHAVAN YASH ASHOK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>DAHE KOMAL DAULATRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>109</td>
+      <td>DHOLE ADITYA NITIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Winjit Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>110</td>
+      <td>GHANGARE PRACHI SUNIL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>111</td>
+      <td>GIRME YASH ARVIND</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>GORDE SIDDHARTHA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>113</td>
+      <td>HALWAI YASH SANJEEV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>114</td>
+      <td>HARDE NILAM PRABHAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>115</td>
+      <td>ILHE SHRIKANT MACHHINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>116</td>
+      <td>JADHAV BHAKTI KIRAN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>117</td>
+      <td>JADHAV DHANANJAY DATTATRAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>118</td>
+      <td>JAGZAP PRATIK RATNAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>JISHAN SHAKIL SAYYAD</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Aress Software and Education Technologies pvt.Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>JOSHI PRANAV SHEKHAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>121</td>
+      <td>JOSHI RADHIKA RHUSHIKESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>122</td>
+      <td>JOSHI VINIT HARSHAD</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>KADAM VIVEK VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td>KAJAL SHARMA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>125</td>
+      <td>KARNE PRASANNA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>126</td>
+      <td>KARODPATI KUSUMITA RAJESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>127</td>
+      <td>KEDARE ASHLESHA RATNAKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>KEKAN SANSKRUTI KHUSHAL</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>129</td>
+      <td>SONAWANE SHRADDHA DIPAK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>PARJANE PRANJAL BABASAHEB</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>SONAWANE GEETA DATTATRAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>JADHAV POOJA SANJEEV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>NAVGIRE SHRUTI DEVIDAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>GADE PRANAV VIKRAMADITYA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>135</td>
+      <td>KSHIRSAGAR TEJAS DHANANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>136</td>
+      <td>KULKARNI VASUDHA SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Thinkbridge</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>137</td>
+      <td>LOKARE DINESH JAYANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>138</td>
+      <td>MHASE SWATI BAPU</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>MHASE VAISHNAVI SHIVAJI</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>140</td>
+      <td>MHASKE ASHWINI ASHOK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Numetry Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>141</td>
+      <td>MORE MAYUR MAHESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>142</td>
+      <td>NAIKWADE VAISHNAVI SHAMRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>143</td>
+      <td>NARKHEDE ISHIKA SACHIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>144</td>
+      <td>NAWALE SAMARTH RAJESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>145</td>
+      <td>NIMBHORKAR NINAD NITIN</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>PAGAR OM PRAKASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>PANDHARE HARSHALINI BALU</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Winjit Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>PANGAVHANE SANKET SHANKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>149</td>
+      <td>PATIL KRUSHNA DEEPAK</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Webtech Developers Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>PATIL LOKESH KAILAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>PATIL PALASH RAVINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Tefologic</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>152</td>
+      <td>PAWAR DARSHANA AVINASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>153</td>
+      <td>PAWAR MAYUR KAILAS</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>154</td>
+      <td>PAWAR PRADYUMNA DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>155</td>
+      <td>PAWAR RUSHIKESH BHARAT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>156</td>
+      <td>PAWAR SHEKHAR DNYANESHWAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Applied AI</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>PUND AJITA GIRISH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Deloitte</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>RUDRABHATE RUCHA UDAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Persistent</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>159</td>
+      <td>SABNE OM MANOJ</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>160</td>
+      <td>SADAPHAL CHINMAY SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>161</td>
+      <td>SAKHARE SHIVPRASAD CHANDRAKANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Deloitte</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>162</td>
+      <td>SALAVE VAIBHAV NAVNATH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>SALBANDE POOJA SITARAM</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>164</td>
+      <td>SALVE TEJAS SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Cyber Success</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>165</td>
+      <td>SATALKAR URMILA RAJENDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Qspiders (Internship)</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>166</td>
+      <td>SHELKE ALISH NAMDEO</td>
+      <td>2024</td>
+      <td>on</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>167</td>
+      <td>SHINDE AKSHAY MADHAVRAO</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>TCS Ninja</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>168</td>
+      <td>SONAR PRATIK PRAKASH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Karmacts  Systms</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>169</td>
+      <td>SURADE SHIVAM SHYAMKANT</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Wesco Digital Innovation Center</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>170</td>
+      <td>TAMBE PRATIK KESHAV</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Godrej Infotech</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>171</td>
+      <td>TANUJA RAMESH GADHE</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>HSBC</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>172</td>
+      <td>WAGH VEDIKA RAVINDRA</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Colgate Global Business Services Private Limited</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>173</td>
+      <td>UNWANE PRASHIK SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Remiges Technologies Pvt Ltd</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>174</td>
+      <td>RASKAR DIPALI VIJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Asian Heart Institute</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>175</td>
+      <td>THORAT RANI SANJAY</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Capgemini</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>176</td>
+      <td>PAWAR VAISHNAVI BHIMASHANKAR</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Benchmark IT Solutions</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>177</td>
+      <td>MATHA AYUSH NILESH</td>
+      <td>2024</td>
+      <td>On</td>
+      <td>Celebal Technologies</td>
+      <td>Computer Engineering</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>Tushar Patekar</td>
+      <td>2025</td>
+      <td>Oncampus</td>
+      <td>RsquareSoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>181</td>
+      <td>Jalindranath Kangane</td>
+      <td>2025</td>
+      <td>OnCampus\r\n</td>
+      <td>RsquareSoft</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>182</td>
+      <td>Pratik Jadhav</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>183</td>
+      <td>Atharva Puri</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>184</td>
+      <td>Sanskruti Jawale</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>185</td>
+      <td>Shruti Khandagale</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>186</td>
+      <td>Shraddha Jejurkar</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>187</td>
+      <td>shrusti Hiray</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Benchmark IT solutions</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>188</td>
+      <td>Chetan Sapkal</td>
+      <td>2025</td>
+      <td>OnCampus</td>
+      <td>Benchmark IT solutions</td>
+      <td>Information Technology</td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td>Saiprasad More</td>
+      <td>2025</td>
+      <td>Internship</td>
+      <td>Deloitte</td>
+      <td>Information Technology</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 12:08:30
+ncie,"Sorry, I couldn't understand that. Could you rephrase?",2025-03-23 12:09:29
+whoa re u,"
+            <link rel=""stylesheet"" type=""text/css"" href=""/static/table.css"">
+            <div class=""bot-response"">
+                <div class=""explanation"">I am Sanjivani Chatbot.  I cannot answer the question ""whoa re u"" as it is not a grammatically correct or understandable query.  Please rephrase your question.</div>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>department_name</th>
+      <th>open_</th>
+      <th>cutoff</th>
+      <th>obc</th>
+      <th>ntd</th>
+      <th>ntb</th>
+      <th>ntc</th>
+      <th>sc</th>
+      <th>vj</th>
+      <th>dt</th>
+      <th>intake</th>
+      <th>collegefees</th>
+      <th>hostelfees</th>
+      <th>exam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Information Technology Engineering</td>
+      <td>87.25</td>
+      <td>87.25</td>
+      <td>86.37</td>
+      <td>86.05</td>
+      <td>85.15</td>
+      <td>84.51</td>
+      <td>73.37</td>
+      <td>74.46</td>
+      <td>74.46</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT-CET</td>
+    </tr>
+    <tr>
+      <td>Computer Science Engineering</td>
+      <td>91.01</td>
+      <td>91.01</td>
+      <td>89.95</td>
+      <td>89.95</td>
+      <td>77.79</td>
+      <td>87.54</td>
+      <td>81.00</td>
+      <td>85.25</td>
+      <td>85.25</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electronics and Computer Engineering</td>
+      <td>83.63</td>
+      <td>83.63</td>
+      <td>83.37</td>
+      <td>77.41</td>
+      <td>75.14</td>
+      <td>84.39</td>
+      <td>69.69</td>
+      <td>76.04</td>
+      <td>76.04</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Civil Engineering</td>
+      <td>50.26</td>
+      <td>50.26</td>
+      <td>46.16</td>
+      <td>43.50</td>
+      <td>26.77</td>
+      <td>32.88</td>
+      <td>20.92</td>
+      <td>35.62</td>
+      <td>35.62</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electrical Engineering</td>
+      <td>71.98</td>
+      <td>71.98</td>
+      <td>69.65</td>
+      <td>14.47</td>
+      <td>47.37</td>
+      <td>64.26</td>
+      <td>46.45</td>
+      <td>44.05</td>
+      <td>44.05</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechanical Engineering</td>
+      <td>66.81</td>
+      <td>66.81</td>
+      <td>59.92</td>
+      <td>55.29</td>
+      <td>47.34</td>
+      <td>18.44</td>
+      <td>39.78</td>
+      <td>32.36</td>
+      <td>32.36</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechatronics Engineering</td>
+      <td>77.29</td>
+      <td>77.29</td>
+      <td>73.42</td>
+      <td>76.61</td>
+      <td>58.04</td>
+      <td>66.81</td>
+      <td>65.32</td>
+      <td>47.34</td>
+      <td>47.34</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Structural Engineering</td>
+      <td>51.05</td>
+      <td>51.05</td>
+      <td>42.92</td>
+      <td>46.85</td>
+      <td>30.95</td>
+      <td>47.34</td>
+      <td>14.47</td>
+      <td>19.93</td>
+      <td>19.93</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 12:09:34
+hi,"
+            <link rel=""stylesheet"" type=""text/css"" href=""/static/table.css"">
+            <div class=""bot-response"">
+                <div class=""explanation"">Okay, I'm ready for your query.  I'm Sanjivani Chatbot.</div>
+                <table border=""1"" class=""dataframe data-table"">
+  <thead>
+    <tr style=""text-align: right;"">
+      <th>department_name</th>
+      <th>open_</th>
+      <th>cutoff</th>
+      <th>obc</th>
+      <th>ntd</th>
+      <th>ntb</th>
+      <th>ntc</th>
+      <th>sc</th>
+      <th>vj</th>
+      <th>dt</th>
+      <th>intake</th>
+      <th>collegefees</th>
+      <th>hostelfees</th>
+      <th>exam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Information Technology Engineering</td>
+      <td>87.25</td>
+      <td>87.25</td>
+      <td>86.37</td>
+      <td>86.05</td>
+      <td>85.15</td>
+      <td>84.51</td>
+      <td>73.37</td>
+      <td>74.46</td>
+      <td>74.46</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT-CET</td>
+    </tr>
+    <tr>
+      <td>Computer Science Engineering</td>
+      <td>91.01</td>
+      <td>91.01</td>
+      <td>89.95</td>
+      <td>89.95</td>
+      <td>77.79</td>
+      <td>87.54</td>
+      <td>81.00</td>
+      <td>85.25</td>
+      <td>85.25</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electronics and Computer Engineering</td>
+      <td>83.63</td>
+      <td>83.63</td>
+      <td>83.37</td>
+      <td>77.41</td>
+      <td>75.14</td>
+      <td>84.39</td>
+      <td>69.69</td>
+      <td>76.04</td>
+      <td>76.04</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Civil Engineering</td>
+      <td>50.26</td>
+      <td>50.26</td>
+      <td>46.16</td>
+      <td>43.50</td>
+      <td>26.77</td>
+      <td>32.88</td>
+      <td>20.92</td>
+      <td>35.62</td>
+      <td>35.62</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Electrical Engineering</td>
+      <td>71.98</td>
+      <td>71.98</td>
+      <td>69.65</td>
+      <td>14.47</td>
+      <td>47.37</td>
+      <td>64.26</td>
+      <td>46.45</td>
+      <td>44.05</td>
+      <td>44.05</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechanical Engineering</td>
+      <td>66.81</td>
+      <td>66.81</td>
+      <td>59.92</td>
+      <td>55.29</td>
+      <td>47.34</td>
+      <td>18.44</td>
+      <td>39.78</td>
+      <td>32.36</td>
+      <td>32.36</td>
+      <td>120</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Mechatronics Engineering</td>
+      <td>77.29</td>
+      <td>77.29</td>
+      <td>73.42</td>
+      <td>76.61</td>
+      <td>58.04</td>
+      <td>66.81</td>
+      <td>65.32</td>
+      <td>47.34</td>
+      <td>47.34</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+    <tr>
+      <td>Structural Engineering</td>
+      <td>51.05</td>
+      <td>51.05</td>
+      <td>42.92</td>
+      <td>46.85</td>
+      <td>30.95</td>
+      <td>47.34</td>
+      <td>14.47</td>
+      <td>19.93</td>
+      <td>19.93</td>
+      <td>60</td>
+      <td>158000.0</td>
+      <td>35000</td>
+      <td>MHT_CET</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+             [Table data included]",2025-03-23 12:11:10
+hi,"I cannot answer the query ""hi"".  That's just a greeting, not a question about the provided data.  To answer your question, I need a question about the `admission_requirements` table data.  For example, you could ask:
+
+* ""What is the cutoff for open category in Computer Science Engineering?""
+* ""Which department has the highest intake?""
+* ""What are the hostel fees for Mechanical Engineering?""
+* ""What is the average cutoff for all departments?""
+
+Please provide a specific question about the table's contents.",2025-03-23 12:12:46
+whoa re u,"I am a large language model, trained by Google.",2025-03-23 12:12:50
+who is hod of civil,I am a chatbot,2025-03-23 12:12:57
+who is the hod of it,"Dr. M.A. Jawale mam, currently serving as the Head of the Department (HOD) of Information Technology, has now also been entrusted with the additional responsibility of overseeing the Computer Department.",2025-03-23 12:13:02
+who are placed in deloitte,"The following students were placed in Deloitte:
+
+* Roshan Jadhav
+* Soham Suryawanshi
+* Vaishnavi Navneet Joshi
+* Pratik Jadhav
+* Atharva Puri
+* Sanskruti Jawale
+* Shruti Khandagale
+* Shraddha Jejurkar
+* Saiprasad More (Internship)
+
+Note that there are two different entries for Deloitte, one with and one without a period after ""Information Technology"".  Both have been included in the results.",2025-03-23 12:13:11
+what is cutoff of it  department,"The provided data doesn't contain information about a cutoff for the IT department.  The table only lists the faculty members and their positions within each department.  There's no mention of admission criteria, scores, or any other cutoff values.",2025-03-23 12:13:21
+what is cutoff of it engineering department,"The provided data doesn't contain information about a cutoff for the IT Engineering department.  The table only lists the faculty and their positions within various engineering departments.  A cutoff would typically be a minimum score or requirement for admission, which isn't included in this dataset.",2025-03-23 12:13:39
