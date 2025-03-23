@@ -5,44 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
             background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
+            color: #333;
         }
 
         h1 {
             text-align: center;
-            color: #333;
+            color: #222;
+        }
+
+        .message {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .toggle-buttons {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .toggle-buttons button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .toggle-buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-container {
+            /* max-width: 800px; */
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        form input, 
+        form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #218838;
+        }
+
+        .hidden {
+            display: none;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 18px;
-            text-align: left;
-            background-color: #ffffff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: white;
+            margin-top: 20px;
         }
 
-        thead {
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
             background-color: #007bff;
-            color: #ffffff;
-        }
-
-        thead th {
-            padding: 12px 15px;
-            text-align: left;
-            font-weight: bold;
-        }
-
-        tbody tr {
-            border-bottom: 1px solid #dddddd;
-            transition: background-color 0.2s ease-in-out;
+            color: white;
         }
 
         tbody tr:nth-child(even) {
@@ -53,135 +131,79 @@
             background-color: #f1f1f1;
         }
 
-        tbody td {
-            padding: 10px 15px;
+        .action-btn {
+            padding: 7px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 3px;
         }
 
-        tbody td:first-child {
-            font-weight: bold;
-            color: #333;
+        .update-btn {
+            background-color: #ffc107;
+            color: white;
         }
 
-        @media (max-width: 768px) {
-            table {
-                font-size: 14px;
-            }
-
-            thead th,
-            tbody td {
-                padding: 8px 10px;
-            }
+        .update-btn:hover {
+            background-color: #e0a800;
         }
 
-        .form-container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        .delete-btn {
+            background-color: #dc3545;
+            color: white;
         }
 
-        form {
-            margin-bottom: 2rem;
-            padding: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background-color: #f9f9f9;
+        .delete-btn:hover {
+            background-color: #c82333;
         }
 
-        label {
-            display: inline-block;
-            width: 150px;
-            margin: 5px 0;
-        }
-
-        input, select {
-            width: calc(100% - 160px);
-            margin: 5px 0;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            margin-top: 10px;
-            padding: 10px 15px;
+        .save-btn {
             background-color: #28a745;
             color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
         }
 
-        button:hover {
+        .save-btn:hover {
             background-color: #218838;
         }
 
-        .toggle-buttons {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .toggle-buttons button {
-            margin: 0 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 15px;
+        .edit-form input, 
+        .edit-form select {
+            width: 100%;
+            padding: 7px;
+            margin: 2px 0;
+            border: 1px solid #ccc;
             border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .toggle-buttons button:hover {
-            background-color: #0056b3;
-        }
-
-        .message {
-            text-align: center;
-            margin-bottom: 20px;
-            padding: 10px;
-            border-radius: 4px;
-        }
-
-        .message.success {
-            color: green;
-            background-color: #d4edda;
-        }
-
-        .message.error {
-            color: red;
-            background-color: #f8d7da;
-        }
-
-        .hidden {
-            display: none;
+            font-size: 14px;
+            box-sizing: border-box;
         }
 
         .pagination {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
+            text-align: center;
+            margin-top: 15px;
         }
 
         .pagination a {
+            text-decoration: none;
+            padding: 8px 12px;
             margin: 0 5px;
-            padding: 8px 15px;
             background-color: #007bff;
             color: white;
-            text-decoration: none;
             border-radius: 4px;
         }
 
         .pagination a:hover {
             background-color: #0056b3;
         }
+
+        .pagination span {
+            font-size: 16px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <h1>Admin Panel</h1>
-
-    <!-- Message section -->
     <div class="message" id="formMessage">
         {% if message %}
             <div class="message success">{{ message }}</div>
@@ -195,33 +217,25 @@
     </div>
 
     <div class="form-container">
-        <!-- Placement Form -->
         <form method="POST" action="/admin" id="placementForm" class="hidden">
             <h2>Add Placement Info</h2>
             <input type="hidden" name="form_type" value="placement">
-
             <label for="name_of_student">Student Name:</label>
-            <input type="text" id="name_of_student" name="name_of_student" required><br>
-
+            <input type="text" id="name_of_student" name="name_of_student" required>
             <label for="batch">Batch:</label>
-            <input type="text" id="batch" name="batch" required><br>
-
+            <input type="text" id="batch" name="batch" required>
             <label for="placementtype">Placement Type:</label>
             <select id="placementtype" name="placementtype" required>
                 <option value="Internship">On-Campus</option>
                 <option value="Full-time">Off-Campus</option>
-            </select><br>
-
+            </select>
             <label for="company">Company:</label>
-            <input type="text" id="company" name="company" required><br>
-
+            <input type="text" id="company" name="company" required>
             <label for="department">Department:</label>
-            <input type="text" id="department" name="department" required><br>
-
+            <input type="text" id="department" name="department" required>
             <button type="submit">Add Placement Info</button>
         </form>
 
-        <!-- Display placement info with pagination -->
         <h2>Placement Information</h2>
         <table>
             <thead>
@@ -231,22 +245,26 @@
                     <th>Placement Type</th>
                     <th>Company</th>
                     <th>Department</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="placementTableBody">
                 {% for placement in placements.items %}
-                <tr>
+                <tr data-id="{{ placement.id }}">
                     <td>{{ placement.student_name }}</td>
                     <td>{{ placement.batch }}</td>
                     <td>{{ placement.placement_type }}</td>
                     <td>{{ placement.name_of_company }}</td>
                     <td>{{ placement.department }}</td>
+                    <td>
+                        <button class="action-btn update-btn" onclick="updateRecord({{ placement.id }})">Update</button>
+                        <button class="action-btn delete-btn" onclick="deleteRecord({{ placement.id }})">Delete</button>
+                    </td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
 
-        <!-- Pagination controls -->
         <div class="pagination">
             {% if placements.has_prev %}
                 <a href="{{ url_for('show_placements', page=placements.prev_num) }}">Previous</a>
@@ -259,10 +277,160 @@
     </div>
 
     <script>
-        // Toggle placement form visibility
-        document.getElementById('showPlacement').addEventListener('click', function () {
+        document.addEventListener("DOMContentLoaded", function () {
+    const placementForm = document.getElementById("placementForm");
+
+    placementForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const formData = new FormData(placementForm);
+
+        fetch("/admin", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.json()) // Expecting a JSON response
+        .then(data => {
+            if (data.success) {
+                alert("Placement added successfully!"); // Success message
+                placementForm.reset(); // Clear form after successful submission
+            } else {
+                alert("Error: " + data.error); // Show error message
+            }
+        })
+        .catch(error => {
+            alert("Something went wrong! " + error);
+        });
+    });
+});
+
+        document.getElementById('showPlacement').addEventListener('click', function() {
             document.getElementById('placementForm').classList.toggle('hidden');
         });
+    
+        function deleteRecord(id) {
+            if (confirm('Are you sure you want to delete this record?')) {
+                fetch(`/admin/delete/${id}`, {
+                    method: 'DELETE'
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        document.querySelector(`tr[data-id="${id}"]`).remove();
+                        alert('Record deleted successfully!');
+                    } else {
+                        alert('Error: ' + (data.error || 'Unknown error occurred'));
+                    }
+                })
+                .catch(error => {
+                    console.error('Delete error:', error);
+                    alert('Error deleting record: ' + error.message);
+                });
+            }
+        }
+    
+        function updateRecord(id) {
+            const row = document.querySelector(`tr[data-id="${id}"]`);
+            const cells = row.getElementsByTagName('td');
+            
+            // Store original data
+            const originalData = {
+                student_name: cells[0].textContent.trim(),
+                batch: cells[1].textContent.trim(),
+                placement_type: cells[2].textContent.trim(),
+                company: cells[3].textContent.trim(),
+                department: cells[4].textContent.trim()
+            };
+    
+            // Replace cells with editable inputs
+            cells[0].innerHTML = `<input type="text" value="${originalData.student_name}" name="name_of_student">`;
+            cells[1].innerHTML = `<input type="text" value="${originalData.batch}" name="batch">`;
+            cells[2].innerHTML = `
+                <select name="placementtype">
+                    <option value="Internship" ${originalData.placement_type === 'On-Campus' ? 'selected' : ''}>On-Campus</option>
+                    <option value="Full-time" ${originalData.placement_type === 'Off-Campus' ? 'selected' : ''}>Off-Campus</option>
+                </select>`;
+            cells[3].innerHTML = `<input type="text" value="${originalData.company}" name="company">`;
+            cells[4].innerHTML = `<input type="text" value="${originalData.department}" name="department">`;
+            cells[5].innerHTML = `
+                <button class="action-btn save-btn" onclick="saveRecord(${id}, this)">Save</button>
+                <button class="action-btn delete-btn" onclick="deleteRecord(${id})">Delete</button>`;
+        }
+    
+        function saveRecord(id, button) {
+            const row = button.closest('tr');
+            const inputs = row.querySelectorAll('input, select');
+            
+            const updatedData = {
+                name_of_student: inputs[0].value.trim(),
+                batch: inputs[1].value.trim(),
+                placementtype: inputs[2].value,
+                company: inputs[3].value.trim(),
+                department: inputs[4].value.trim()
+            };
+    
+            fetch(`/admin/update/${id}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(updatedData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.text().then(text => {
+                        throw new Error(`HTTP error! status: ${response.status}, response: ${text.substring(0, 100)}...`);
+                    });
+                }
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    return response.text().then(text => {
+                        throw new Error(`Expected JSON, got ${contentType}: ${text.substring(0, 100)}...`);
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.success) {
+                    // Update the cells with the new values directly
+                    const cells = row.getElementsByTagName('td');
+                    cells[0].textContent = updatedData.name_of_student;
+                    cells[1].textContent = updatedData.batch;
+                    cells[2].textContent = updatedData.placementtype === 'Internship' ? 'On-Campus' : 'Off-Campus';
+                    cells[3].textContent = updatedData.company;
+                    cells[4].textContent = updatedData.department;
+                    
+                    // Recreate the action buttons with fresh event listeners
+                    cells[5].innerHTML = `
+                        <button class="action-btn update-btn" onclick="updateRecord(${id})">Update</button>
+                        <button class="action-btn delete-btn" onclick="deleteRecord(${id})">Delete</button>`;
+                    
+                    alert('Record updated successfully!');
+                } else {
+                    alert('Error: ' + (data.error || 'Unknown error occurred'));
+                }
+            })
+            .catch(error => {
+                console.error('Update error:', error);
+                alert('Error updating record: ' + error.message);
+                // Restore original buttons on error
+                const cells = row.getElementsByTagName('td');
+                cells[5].innerHTML = `
+                    <button class="action-btn update-btn" onclick="updateRecord(${id})">Update</button>
+                    <button class="action-btn delete-btn" onclick="deleteRecord(${id})">Delete</button>`;
+            });
+        }
+
+        if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "/login";  // Redirect to login if not logged in
+    }
+
     </script>
 </body>
 </html>

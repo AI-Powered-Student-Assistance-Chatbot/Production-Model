@@ -321,10 +321,12 @@
             sendChatBtn.click();
         }
     });
-
-    document.getElementById("admin-btn")?.addEventListener("click", () => {
-        window.location.href = "/admin";
+    document.getElementById("login-btn")?.addEventListener("click", () => {
+        window.location.href = "/login";
     });
+    // document.getElementById("admin-btn")?.addEventListener("click", () => {
+    //     window.location.href = "/admin";
+    // });
 
     document.getElementById("history-btn")?.addEventListener("click", () => {
         historyModal.style.display = "block";

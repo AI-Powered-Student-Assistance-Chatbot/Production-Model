@@ -9,15 +9,22 @@ import json
 import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from flask import Flask, request, jsonify, render_template, session
+from flask import Flask, flash, request, jsonify, render_template, session
 import datetime
 import csv
 
 app = Flask(__name__)
 app.secret_key = "your_secret_key"  # Replace with your actual secret key
+DATABASE_URL = "mysql+pymysql://root@localhost:3306/collegedata"  # Replace with your actual details
 
 # Load Gemini API Key securely
 os.environ["GEMINI_API_KEY"] = "AIzaSyAy0IUrqWfBs6ITZvjU3F8Hq31l-EPqD6o"  # Replace with your actual API key
+app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+
+db = SQLAlchemy(app)
+
 
 def configure_gemini_api():
     try:
@@ -38,7 +45,6 @@ def configure_gemini_api():
 chat_model = configure_gemini_api()
 
 # Database configuration
-DATABASE_URL = "mysql+pymysql://root@localhost:3306/collegedata"  # Replace with your actual details
 
 def fetch_data_from_db(query, params=None):
     """Fetch data from the database."""
@@ -163,7 +169,9 @@ def index_page():
     if "chat_history" not in session:
         session["chat_history"] = []
     return render_template("index.html", chat_history=session["chat_history"])
-
+@app.route('/login')
+def login():
+    return render_template('login.html')  # Show login page
 @app.route("/get_response", methods=["POST"])
 def get_response():
     user_input = request.json.get("user_input", "").strip()
@@ -203,44 +211,70 @@ def admin_panel_post():
     form_type = request.form.get('form_type')
     if form_type == 'placement':
         try:
-            query = """
-                INSERT INTO sanjivaniplacementinfo
-                (Student_Name, Batch, Placement_Type, Name_Of_Company, department)
-                VALUES (:Student_Name, :Batch, :Placement_Type, :Name_Of_Company, :department)
-            """
-            values = {
-                'Student_Name': request.form['name_of_student'],
-                'Batch': request.form['batch'],
-                'Placement_Type': request.form['placementtype'],
-                'Name_Of_Company': request.form['company'],
-                'department': request.form['department']
-            }
+            # Create new placement record
+            new_placement = SanjivaniPlacementInfo(
+                student_name=request.form['name_of_student'],
+                batch=request.form['batch'],
+                placement_type=request.form['placementtype'],
+                name_of_company=request.form['company'],
+                department=request.form['department']
+            )
 
-            engine = sqlalchemy.create_engine(DATABASE_URL)
-            with engine.begin() as conn:
-                conn.execute(sqlalchemy.text(query), values)
+            # Add to session and commit
+            db.session.add(new_placement)
+            db.session.commit()
+
+            flash("Placement added successfully!", "success") 
 
             # ✅ Query placement data correctly
             page = request.args.get('page', 1, type=int)
             per_page = 10
             placements = SanjivaniPlacementInfo.query.paginate(page=page, per_page=per_page, error_out=False)
     
-            return render_template('admin_panel.html', placements=placements, message="Placement added successfully!")
+            return jsonify({"success": True, "message": "Placement added successfully!"})
 
         except Exception as e:
             page = request.args.get('page', 1, type=int)
             per_page = 10
             placements = SanjivaniPlacementInfo.query.paginate(page=page, per_page=per_page, error_out=False)
-    
-            return render_template('admin_panel.html', placements=placements, error=f"Error inserting placement data: {str(e)}")
+            return jsonify({"success": False, "error": "Invalid form submission"})
     return render_template('admin_panel.html')
 
-app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+@app.route('/admin/delete/<int:id>', methods=['DELETE'])
+def delete_placement(id):
+    try:
+        placement = SanjivaniPlacementInfo.query.get_or_404(id)
+        db.session.delete(placement)
+        db.session.commit()
+        return jsonify({"success": True, "message": "Record deleted successfully"})
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({"success": False, "error": str(e)}), 500
 
-db = SQLAlchemy(app)
+# New UPDATE endpoint
+@app.route('/admin/update/<int:id>', methods=['POST'])
+def update_placement(id):
+    try:
+        placement = SanjivaniPlacementInfo.query.get_or_404(id)
+        placement.student_name = request.json['name_of_student']
+        placement.batch = request.json['batch']
+        placement.placement_type = request.json['placementtype']
+        placement.name_of_company = request.json['company']
+        placement.department = request.json['department']
 
+        db.session.commit()
+
+        page = request.args.get('page', 1, type=int)
+        per_page = 10
+        placements = SanjivaniPlacementInfo.query.paginate(page=page, per_page=per_page, error_out=False)
+        return jsonify({"success": True, "message": "Placement updated successfully!"}), 200
+    except Exception as e:
+        db.session.rollback()
+        page = request.args.get('page', 1, type=int)
+        per_page = 10
+        placements = SanjivaniPlacementInfo.query.paginate(page=page, per_page=per_page, error_out=False)
+        return jsonify({"success": False, "error": str(e)}), 500  # Return JSON error response
 
 class SanjivaniPlacementInfo(db.Model):
     __tablename__ = 'sanjivaniplacementinfo'

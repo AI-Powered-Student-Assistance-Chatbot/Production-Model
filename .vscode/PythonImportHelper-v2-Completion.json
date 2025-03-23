@@ -183,6 +183,14 @@
         "documentation": {}
     },
     {
+        "label": "flash",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
         "label": "request",
         "importPath": "flask",
         "description": "flask",
@@ -569,7 +577,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def home():\n    if \"chat_history\" not in session:\n        session[\"chat_history\"] = []\n    return render_template(\"bot_entry.html\", chat_history=session[\"chat_history\"])\n@app.route(\"/index\")\ndef index_page():\n    if \"chat_history\" not in session:\n        session[\"chat_history\"] = []\n    return render_template(\"index.html\", chat_history=session[\"chat_history\"])\n@app.route(\"/get_response\", methods=[\"POST\"])",
+        "peekOfCode": "def home():\n    if \"chat_history\" not in session:\n        session[\"chat_history\"] = []\n    return render_template(\"bot_entry.html\", chat_history=session[\"chat_history\"])\n@app.route(\"/index\")\ndef index_page():\n    if \"chat_history\" not in session:\n        session[\"chat_history\"] = []\n    return render_template(\"index.html\", chat_history=session[\"chat_history\"])\n@app.route('/login')",
         "detail": "app",
         "documentation": {}
     },
@@ -578,7 +586,16 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def index_page():\n    if \"chat_history\" not in session:\n        session[\"chat_history\"] = []\n    return render_template(\"index.html\", chat_history=session[\"chat_history\"])\n@app.route(\"/get_response\", methods=[\"POST\"])\ndef get_response():\n    user_input = request.json.get(\"user_input\", \"\").strip()\n    if not user_input:\n        return jsonify({\"response\": \"Please enter a valid message.\"})\n    user_input = user_input.lower()  # Normalize the user input to lowercase",
+        "peekOfCode": "def index_page():\n    if \"chat_history\" not in session:\n        session[\"chat_history\"] = []\n    return render_template(\"index.html\", chat_history=session[\"chat_history\"])\n@app.route('/login')\ndef login():\n    return render_template('login.html')  # Show login page\n@app.route(\"/get_response\", methods=[\"POST\"])\ndef get_response():\n    user_input = request.json.get(\"user_input\", \"\").strip()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def login():\n    return render_template('login.html')  # Show login page\n@app.route(\"/get_response\", methods=[\"POST\"])\ndef get_response():\n    user_input = request.json.get(\"user_input\", \"\").strip()\n    if not user_input:\n        return jsonify({\"response\": \"Please enter a valid message.\"})\n    user_input = user_input.lower()  # Normalize the user input to lowercase\n    response = process_query(user_input)\n    #admin",
         "detail": "app",
         "documentation": {}
     },
@@ -605,7 +622,25 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def admin_panel_post():\n    \"\"\"Handles POST requests for the Admin Panel\"\"\"\n    form_type = request.form.get('form_type')\n    if form_type == 'placement':\n        try:\n            query = \"\"\"\n                INSERT INTO sanjivaniplacementinfo\n                (Student_Name, Batch, Placement_Type, Name_Of_Company, department)\n                VALUES (:Student_Name, :Batch, :Placement_Type, :Name_Of_Company, :department)\n            \"\"\"",
+        "peekOfCode": "def admin_panel_post():\n    \"\"\"Handles POST requests for the Admin Panel\"\"\"\n    form_type = request.form.get('form_type')\n    if form_type == 'placement':\n        try:\n            # Create new placement record\n            new_placement = SanjivaniPlacementInfo(\n                student_name=request.form['name_of_student'],\n                batch=request.form['batch'],\n                placement_type=request.form['placementtype'],",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "delete_placement",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def delete_placement(id):\n    try:\n        placement = SanjivaniPlacementInfo.query.get_or_404(id)\n        db.session.delete(placement)\n        db.session.commit()\n        return jsonify({\"success\": True, \"message\": \"Record deleted successfully\"})\n    except Exception as e:\n        db.session.rollback()\n        return jsonify({\"success\": False, \"error\": str(e)}), 500\n# New UPDATE endpoint",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "update_placement",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def update_placement(id):\n    try:\n        placement = SanjivaniPlacementInfo.query.get_or_404(id)\n        placement.student_name = request.json['name_of_student']\n        placement.batch = request.json['batch']\n        placement.placement_type = request.json['placementtype']\n        placement.name_of_company = request.json['company']\n        placement.department = request.json['department']\n        db.session.commit()\n        page = request.args.get('page', 1, type=int)",
         "detail": "app",
         "documentation": {}
     },
@@ -641,7 +676,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\napp.secret_key = \"your_secret_key\"  # Replace with your actual secret key\n# Load Gemini API Key securely\nos.environ[\"GEMINI_API_KEY\"] = \"AIzaSyAy0IUrqWfBs6ITZvjU3F8Hq31l-EPqD6o\"  # Replace with your actual API key\ndef configure_gemini_api():\n    try:\n        genai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\n        return genai.GenerativeModel(\n            model_name=\"gemini-1.5-flash\",\n            generation_config={",
+        "peekOfCode": "app = Flask(__name__)\napp.secret_key = \"your_secret_key\"  # Replace with your actual secret key\nDATABASE_URL = \"mysql+pymysql://root@localhost:3306/collegedata\"  # Replace with your actual details\n# Load Gemini API Key securely\nos.environ[\"GEMINI_API_KEY\"] = \"AIzaSyAy0IUrqWfBs6ITZvjU3F8Hq31l-EPqD6o\"  # Replace with your actual API key\napp.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\ndef configure_gemini_api():\n    try:",
         "detail": "app",
         "documentation": {}
     },
@@ -650,25 +685,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app.secret_key = \"your_secret_key\"  # Replace with your actual secret key\n# Load Gemini API Key securely\nos.environ[\"GEMINI_API_KEY\"] = \"AIzaSyAy0IUrqWfBs6ITZvjU3F8Hq31l-EPqD6o\"  # Replace with your actual API key\ndef configure_gemini_api():\n    try:\n        genai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\n        return genai.GenerativeModel(\n            model_name=\"gemini-1.5-flash\",\n            generation_config={\n                \"temperature\": 0.7,",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "os.environ[\"GEMINI_API_KEY\"]",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "os.environ[\"GEMINI_API_KEY\"] = \"AIzaSyAy0IUrqWfBs6ITZvjU3F8Hq31l-EPqD6o\"  # Replace with your actual API key\ndef configure_gemini_api():\n    try:\n        genai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\n        return genai.GenerativeModel(\n            model_name=\"gemini-1.5-flash\",\n            generation_config={\n                \"temperature\": 0.7,\n                \"top_p\": 0.95,\n                \"top_k\": 40,",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "chat_model",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "chat_model = configure_gemini_api()\n# Database configuration\nDATABASE_URL = \"mysql+pymysql://root@localhost:3306/collegedata\"  # Replace with your actual details\ndef fetch_data_from_db(query, params=None):\n    \"\"\"Fetch data from the database.\"\"\"\n    try:\n        engine = sqlalchemy.create_engine(DATABASE_URL)\n        with engine.connect() as connection:\n            if params:\n                return pd.read_sql(query, connection, params=params)",
+        "peekOfCode": "app.secret_key = \"your_secret_key\"  # Replace with your actual secret key\nDATABASE_URL = \"mysql+pymysql://root@localhost:3306/collegedata\"  # Replace with your actual details\n# Load Gemini API Key securely\nos.environ[\"GEMINI_API_KEY\"] = \"AIzaSyAy0IUrqWfBs6ITZvjU3F8Hq31l-EPqD6o\"  # Replace with your actual API key\napp.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\ndef configure_gemini_api():\n    try:\n        genai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])",
         "detail": "app",
         "documentation": {}
     },
@@ -677,7 +694,52 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "DATABASE_URL = \"mysql+pymysql://root@localhost:3306/collegedata\"  # Replace with your actual details\ndef fetch_data_from_db(query, params=None):\n    \"\"\"Fetch data from the database.\"\"\"\n    try:\n        engine = sqlalchemy.create_engine(DATABASE_URL)\n        with engine.connect() as connection:\n            if params:\n                return pd.read_sql(query, connection, params=params)\n            return pd.read_sql(query, connection)\n    except Exception as e:",
+        "peekOfCode": "DATABASE_URL = \"mysql+pymysql://root@localhost:3306/collegedata\"  # Replace with your actual details\n# Load Gemini API Key securely\nos.environ[\"GEMINI_API_KEY\"] = \"AIzaSyAy0IUrqWfBs6ITZvjU3F8Hq31l-EPqD6o\"  # Replace with your actual API key\napp.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\ndef configure_gemini_api():\n    try:\n        genai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\n        return genai.GenerativeModel(",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"GEMINI_API_KEY\"]",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "os.environ[\"GEMINI_API_KEY\"] = \"AIzaSyAy0IUrqWfBs6ITZvjU3F8Hq31l-EPqD6o\"  # Replace with your actual API key\napp.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\ndef configure_gemini_api():\n    try:\n        genai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\n        return genai.GenerativeModel(\n            model_name=\"gemini-1.5-flash\",\n            generation_config={",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SQLALCHEMY_DATABASE_URI']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\ndef configure_gemini_api():\n    try:\n        genai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\n        return genai.GenerativeModel(\n            model_name=\"gemini-1.5-flash\",\n            generation_config={\n                \"temperature\": 0.7,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\ndef configure_gemini_api():\n    try:\n        genai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\n        return genai.GenerativeModel(\n            model_name=\"gemini-1.5-flash\",\n            generation_config={\n                \"temperature\": 0.7,\n                \"top_p\": 0.95,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "db = SQLAlchemy(app)\ndef configure_gemini_api():\n    try:\n        genai.configure(api_key=os.environ[\"GEMINI_API_KEY\"])\n        return genai.GenerativeModel(\n            model_name=\"gemini-1.5-flash\",\n            generation_config={\n                \"temperature\": 0.7,\n                \"top_p\": 0.95,\n                \"top_k\": 40,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "chat_model",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "chat_model = configure_gemini_api()\n# Database configuration\ndef fetch_data_from_db(query, params=None):\n    \"\"\"Fetch data from the database.\"\"\"\n    try:\n        engine = sqlalchemy.create_engine(DATABASE_URL)\n        with engine.connect() as connection:\n            if params:\n                return pd.read_sql(query, connection, params=params)\n            return pd.read_sql(query, connection)",
         "detail": "app",
         "documentation": {}
     },
@@ -732,33 +794,6 @@
         "importPath": "app",
         "description": "app",
         "peekOfCode": "y = tags\nclf.fit(x, y)\n# Generate fallback response\ndef check_intents_for_fallback(user_query, threshold=85):\n    best_score, best_response = 0, None\n    user_query_lower = user_query.lower()  # Convert user query to lowercase\n    for intent in intents:\n        # Normalize intent patterns to lowercase for matching\n        patterns_lower = [pattern.lower() for pattern in intent.get(\"patterns\", [])]\n        match = process.extractOne(user_query_lower, patterns_lower)",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "app.config['SQLALCHEMY_DATABASE_URI']",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nclass SanjivaniPlacementInfo(db.Model):\n    __tablename__ = 'sanjivaniplacementinfo'\n    id = db.Column(db.Integer, primary_key=True)\n    student_name = db.Column(db.String(100), nullable=False)\n    batch = db.Column(db.String(20), nullable=False)\n    placement_type = db.Column(db.String(50), nullable=False)\n    name_of_company = db.Column(db.String(100), nullable=False)",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS']",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\ndb = SQLAlchemy(app)\nclass SanjivaniPlacementInfo(db.Model):\n    __tablename__ = 'sanjivaniplacementinfo'\n    id = db.Column(db.Integer, primary_key=True)\n    student_name = db.Column(db.String(100), nullable=False)\n    batch = db.Column(db.String(20), nullable=False)\n    placement_type = db.Column(db.String(50), nullable=False)\n    name_of_company = db.Column(db.String(100), nullable=False)\n    department = db.Column(db.String(100), nullable=False)",
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "db",
-        "kind": 5,
-        "importPath": "app",
-        "description": "app",
-        "peekOfCode": "db = SQLAlchemy(app)\nclass SanjivaniPlacementInfo(db.Model):\n    __tablename__ = 'sanjivaniplacementinfo'\n    id = db.Column(db.Integer, primary_key=True)\n    student_name = db.Column(db.String(100), nullable=False)\n    batch = db.Column(db.String(20), nullable=False)\n    placement_type = db.Column(db.String(50), nullable=False)\n    name_of_company = db.Column(db.String(100), nullable=False)\n    department = db.Column(db.String(100), nullable=False)\n@app.route(\"/get_history\", methods=[\"GET\"])",
         "detail": "app",
         "documentation": {}
     }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Placement</title>
+</head>
+<body>
+    <h1>Update Placement Info</h1>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <form action="{{ url_for('update_placement', id=placement.id) }}" method="POST">
+        <label for="name_of_student">Student Name:</label>
+        <input type="text" id="name_of_student" name="name_of_student" value="{{ placement.Student_Name }}" required><br>
+
+        <label for="batch">Batch:</label>
+        <input type="text" id="batch" name="batch" value="{{ placement.Batch }}" required><br>
+
+        <label for="placementtype">Placement Type:</label>
+        <select id="placementtype" name="placementtype" required>
+            <option value="Internship" {% if placement.Placement_Type == 'Internship' %}selected{% endif %}>Internship</option>
+            <option value="Full-time" {% if placement.Placement_Type == 'Full-time' %}selected{% endif %}>Full-time</option>
+        </select><br>
+
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" value="{{ placement.Name_Of_Company }}" required><br>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" value="{{ placement.department }}" required><br>
+
+        <button type="submit">Update Placement</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('admin_panel_post') }}">Back to Admin Panel</a>
+</body>
+</html>
