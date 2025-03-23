@@ -1,23 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    {% block styles %}{% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CampusConnect Bot</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/ionicons@6.0.0/dist/ionicons/ionicons.min.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/ionicons@6.0.0/dist/ionicons/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        display: flex;
+        width: 100%;
+      }
+
+      /* Sidebar Styling */
+      .sidebar {
+        width: 250px;
+        background-color: #715270;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .sidebar h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sidebar ul li {
+        margin: 15px 0;
+      }
+
+      .sidebar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      .sidebar ul li a:hover {
+        background-color: #3498db;
+      }
+
+      /* Main Content */
+      .main-content {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        background-color: #1d81c3; /* Dark background for better contrast */
+        color: white; /* Text color improved for visibility */
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .logo-container h1 {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo-container img {
+        width: 65px;
+        height: 65px;
+        margin-right: 10px;
+      }
+
+      .admin-btn {
+        background-color: #0c0c0c;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .admin-btn:hover {
+        background-color: #72c753;
+      }
+
+      /* Content */
+      main {
+        flex: 0.1;
+        margin-top: -12px; /* Reduced space */
+        padding: 0px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="/">Chatbot</a></li>
-                <li><a href="/history">Conversation History</a></li>
-                <li><a href="/about">About Us</a></li>
-            </ul>
-        </div>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="/index">Chatbot</a></li>
+          <li><a href="/history">Conversation History</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="https://sanjivanicoe.org.in/">College Website</a></li>
+        </ul>
+      </div>
 
          <!-- Main Content -->
     <div class="main-content">
@@ -35,11 +162,9 @@
             </div>
             
         </header>
-        <main>
-            {% block content %}
-            {% endblock %}
-        </main>
+
+        <main>{% block content %} {% endblock %}</main>
+      </div>
     </div>
-    </div>
-</body>
+  </body>
 </html>
