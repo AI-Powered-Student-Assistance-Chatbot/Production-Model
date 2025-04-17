@@ -656,6 +656,10 @@ def get_response():
         csv_writer.writerow([user_input, response, timestamp])
 
     return jsonify({"response": response})
+@app.route('/login')
+def login():
+    return render_template('login.html')  # Show login page
+
 
 @app.route('/admin', methods=['GET'])
 def show_placements():
